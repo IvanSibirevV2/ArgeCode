@@ -1,0 +1,5 @@
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\ArgeCode.csproj.CoreCompileInputs.cache
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\bin\Debug\ArgeCode.dll
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\bin\Debug\ArgeCode.pdb
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\ArgeCode.dll
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\ArgeCode.pdb
