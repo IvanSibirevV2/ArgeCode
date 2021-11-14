@@ -1,0 +1,120 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+////////////////////////////////////////////////////////////////////////////  
+using System.Diagnostics;
+using Component.ConsoleR;
+using Component.Reflection;
+using System.ComponentModel;
+using System.Runtime.InteropServices;
+using System.Runtime.Remoting;
+////////////////////////////////////////////////////////////////////////////
+namespace Component.Diagnostics
+{
+    public class ProgresEr:INewEable,ICloneable
+    {
+        /// <summary> Сдесь вы можете хранить текст, микросообщение
+        /// , которое при отледке или выполнении вычислений поможет понять что сейчас выполняется.
+        /// Вы можете использовать этот параметр при подписывании своей лямбды на то или иное событие
+        /// </summary>
+        public System.String p_Msg="";
+        public System.UInt16 p_Tick =0;
+        public System.UInt16 p_MaxTick = 100;
+        public System.Byte p_Persent =0;
+        /// <summary>Список подписаных на событие лямбд.
+        /// В данной ситуации это проще и надежней чем System.EventHandler. 
+        /// </summary>
+        public List<System.Action<Component.Diagnostics.ProgresEr>> p_OnActS = new List<Action<ProgresEr>>();
+        /// <summary>Используется для отлова ошибок оценки новых вычислительных алгоритмов</summary>
+        public List<System.Action<Component.Diagnostics.ProgresEr>> p_OnErorS = new List<Action<ProgresEr>>();
+        private System.Byte p_Last_Persent =0;
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////
+        public ProgresEr(){}
+        public ProgresEr Set(
+            ProgresEr _this = null
+            , System.String _Msg = null
+            , System.Nullable<System.UInt16> _Tick = null
+            , System.Nullable<System.UInt16> _MaxTick = null
+            , System.Nullable<System.Byte> _Persent = null
+            , List<System.Action<Component.Diagnostics.ProgresEr>> _OnActS = null
+            , List<System.Action<Component.Diagnostics.ProgresEr>> _OnErorS = null
+        )
+        {
+            if (_this!=null)
+                this.Set(
+                    _Msg: _this.p_Msg
+                    , _Tick: _this.p_Tick
+                    , _MaxTick: _this.p_MaxTick
+                    , _Persent: _this.p_Persent
+                    , _OnActS: _this.p_OnActS.Get__New().Set(a=>_this.p_OnActS.ForEach(b=>a.Add(b)))
+                    , _OnErorS: _this.p_OnErorS.Get__New().Set(a => _this.p_OnActS.ForEach(b => a.Add(b)))
+                )
+            ;
+            if (_Msg != null) this.p_Msg = _Msg;
+            if (_Tick != null) this.p_Tick = _Tick.Value;
+            if (_MaxTick != null) this.p_MaxTick = _MaxTick.Value;
+            if (_Persent != null) this.p_Persent = _Persent.Value;
+            if (_OnActS != null) this.p_OnActS = _OnActS;
+            if (_OnErorS != null) this.p_OnErorS = _OnActS;
+            return this;
+        }
+        public ProgresEr Add(
+            System.Action<Component.Diagnostics.ProgresEr> _OnAct = null
+            , System.Action<Component.Diagnostics.ProgresEr> _OnEror = null
+        )
+        {
+            if (_OnAct != null) this.p_OnActS.Add(_OnAct);
+            if (_OnEror != null) this.p_OnErorS.Add(_OnEror);
+            return this;
+        }
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////
+        public ProgresEr Set_Next()
+        {
+            this.p_Tick++;
+            this.p_Persent =(System.Byte)(100 * this.p_Tick / this.p_MaxTick);
+            this.p_Persent.ToString().WriteLine();
+            if (this.p_Last_Persent != this.p_Persent)this.p_OnActS.ForEach(a=>a(this));
+            if(this.p_Persent>100) this.p_OnErorS.ForEach(a => a(this));
+            this.p_Last_Persent = this.p_Persent;
+            return this;
+        }
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////
+        public ProgresEr New() =>new ProgresEr();
+        System.Object INewEable.New()=>this.New();
+        public ProgresEr Clone() => this.New().Set(_this:this);
+        System.Object ICloneable.Clone() => this.Clone();
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>Component.Diagnostics.ProgresEr.Test();</summary>
+        public static void Test()
+        {
+            Component.StaticC.CheckStackTracer();
+            Component.StaticC.p_IConsoleR.SharpWriter();
+            ProgresEr _ProgresEr = (new ProgresEr())
+                .Set(_Msg: "Component.ProgresEr.Test();"
+                    , _MaxTick:4
+                )
+                .Add(_OnAct:
+                        a => (
+                            a.p_Tick.ToString() + "/"
+                            + a.p_MaxTick.ToString() + "-"
+                            + a.p_Persent.ToString() + "%"
+                        ).WriteLine()
+                    , _OnEror:
+                        a =>("OnEror" 
+                            + a.p_Tick.ToString() + "/"
+                            + a.p_MaxTick.ToString() + "-"
+                            + a.p_Persent.ToString() + "%"
+                        ).WriteLine()
+                )
+                .Set_Next()
+                .Set_Next()
+                .Set_Next()
+                .Set_Next()
+                .Set_Next()
+            ;
+            Component.StaticC.p_IConsoleR.SharpWriter();
+        }
+    }
+}

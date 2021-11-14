@@ -47,11 +47,17 @@
     <Compile Include="01_System\INewEable.cs" />
     <Compile Include="01_System\SetIf_T.cs" />
     <Compile Include="01_System\Set_T.cs" />
-    <Compile Include="03_VirtualConsole\Ext_T_ReadLine.cs" />
-    <Compile Include="03_VirtualConsole\VirtualConsole.cs" />
+    <Compile Include="02_Diagnostics\Ext_DoTestMode.cs" />
+    <Compile Include="02_Diagnostics\Ext_Stopwatch.cs" />
+    <None Include="02_Diagnostics\ProgresEr.cs_" />
+    <Compile Include="02_Diagnostics\StackTracer.cs" />
+    <None Include="03_VirtualConsole\Ext_Get_ReadLine.cs_" />
+    <None Include="03_VirtualConsole\Ext_T_ReadLine.cs_" />
+    <None Include="03_VirtualConsole\VirtualConsole.cs_" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="02_Diagnostics\_ReadMe0.txt" />
     <Content Include="03_VirtualConsole\_ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
