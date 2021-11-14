@@ -47,9 +47,7 @@
     <Compile Include="01_System\INewEable.cs" />
     <Compile Include="01_System\SetIf_T.cs" />
     <Compile Include="01_System\Set_T.cs" />
-    <Compile Include="03_VirtualConsole\Ext_VirtualConsole.cs" />
-    <Compile Include="03_VirtualConsole\Config.cs" />
-    <Compile Include="03_VirtualConsole\Ext_WriteLine.cs" />
+    <Compile Include="03_VirtualConsole\Ext_T_ReadLine.cs" />
     <Compile Include="03_VirtualConsole\VirtualConsole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

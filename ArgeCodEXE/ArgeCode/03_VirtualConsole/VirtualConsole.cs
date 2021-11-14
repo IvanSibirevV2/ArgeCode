@@ -41,4 +41,40 @@ namespace System.VConsole
         public System.String ReadLine() {return this.Act_ReadLine(); }
         #endregion
     }
+    public static class Ext_VirtualConsole
+    {
+        /// <summary>
+        /// Лямбда контекст консоли по окончании которого цвет сбрасывается на стандартный
+        /// Печать дико цветного текста в консоли  - операция не чатая, по этому
+        /// вызываем консоль (например из System.VConsole.Config...), затем в её контексте передаем печатаем текст.
+        /// </summary>
+        public static VirtualConsole Set_(this VirtualConsole _this, System.Action<VirtualConsole> x) { x(_this); return _this.Set_Default(); }
+        public static VirtualConsole Set_Color(this VirtualConsole _this, ConsoleColor _ForegroundColor, ConsoleColor _BackgroundColor)
+        { _this.p_BackgroundColor = _BackgroundColor; _this.p_ForegroundColor = _ForegroundColor; return _this; }
+        public static VirtualConsole Set_Default(this VirtualConsole _this) => _this.Set_Color(ConsoleColor.Gray, ConsoleColor.Black);
+        public static VirtualConsole Set_Test(this VirtualConsole _this) => _this.Set_Color(ConsoleColor.Cyan, ConsoleColor.DarkRed);
+        public static VirtualConsole Set_Exception(this VirtualConsole _this) => _this.Set_Color(ConsoleColor.Red, ConsoleColor.Black);
+        public static VirtualConsole Set_DarkMagenta(this VirtualConsole _this) => _this.Set_Color(ConsoleColor.Green, ConsoleColor.DarkMagenta);
+    }
+    public static class Config
+    {
+        /// <summary>
+        /// Синглтон виртуальной консоли
+        /// System.VConsole.Config.p_VirtualConsole
+        /// </summary>
+        public static VirtualConsole p_VirtualConsole = new VirtualConsole();
+    }
+  
+}
+namespace System
+{
+    public static class Ext_WriteLine
+    {
+        public static System.String Write(this System.String _String)
+        { System.VConsole.Config.p_VirtualConsole.Write(_String); return _String; }
+        public static System.String WriteLine(this System.String _String)
+        { System.VConsole.Config.p_VirtualConsole.WriteLine(_String); return _String; }
+        public static System.String ReadLine(this System.String _String)
+        { return System.VConsole.Config.p_VirtualConsole.ReadLine(); }
+    }
 }

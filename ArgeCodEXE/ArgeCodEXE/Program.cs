@@ -11,6 +11,7 @@ namespace ArgeCodEXE
         static void Main(string[] args)
         {
             System.Console.WriteLine("Привет мир");
+            System.VConsole.Ext_T_ReadLine.Test_ReadLine();
             System.Console.ReadLine();
         }
     }
