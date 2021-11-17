@@ -56,7 +56,7 @@
     <Compile Include="02_Diagnostics\StackTracer.cs" />
     <None Include="03_VirtualConsole\Ext_Get_ReadLine.cs_" />
     <None Include="03_VirtualConsole\Ext_T_ReadLine.cs_" />
-    <None Include="03_VirtualConsole\VirtualConsole.cs_" />
+    <Compile Include="03_VirtualConsole\VirtualConsole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
   </ItemGroup>
