@@ -4,6 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.Runtime.InteropServices;
+using System.Threading;
+using System.Diagnostics;
+
+
 namespace ArgeCodEXE
 {
     class Program
@@ -11,7 +16,7 @@ namespace ArgeCodEXE
         static void Main(string[] args)
         {
             System.Console.WriteLine("Привет мир");
-            System.VConsole.Ext_T_ReadLine.Test_ReadLine();
+            System.Diagnostics.TestLast.Do();
             System.Console.ReadLine();
         }
     }
