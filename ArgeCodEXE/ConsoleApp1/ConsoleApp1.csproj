@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BE57A372-6117-4E1A-9466-E3B9826320E9}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ArgeCode</RootNamespace>
-    <AssemblyName>ArgeCode</AssemblyName>
+    <ProjectGuid>{3CEF0792-F2B0-49F4-AB2F-4D902A1F0A90}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApp1</RootNamespace>
+    <AssemblyName>ConsoleApp1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -30,10 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>ArgeFire.ico</ApplicationIcon>
-  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ArgeCode, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ArgeCode.0.0.1\lib\net471\ArgeCode.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,29 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="01_System\Ext_Cast_T.cs" />
-    <Compile Include="01_System\GetIf_T.cs" />
-    <Compile Include="01_System\Get_T.cs" />
-    <Compile Include="01_System\INewEable.cs" />
-    <Compile Include="01_System\SetIf_T.cs" />
-    <Compile Include="01_System\Set_T.cs" />
-    <Compile Include="02_Diagnostics\TestLast.cs" />
-    <None Include="02_Diagnostics\Ext_Stopwatch.cs_" />
-    <None Include="02_Diagnostics\ProgresEr.cs_" />
-    <Compile Include="02_Diagnostics\StackTracer.cs" />
-    <Compile Include="03_VirtualConsole\Ext_Get_ReadLine.cs" />
-    <Compile Include="03_VirtualConsole\Ext_T_ReadLine.cs" />
-    <Compile Include="03_VirtualConsole\VirtualConsole.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="02_Diagnostics\_ReadMe0.txt" />
-    <Content Include="03_VirtualConsole\_ReadMe.txt" />
-    <Content Include="ArgeFire.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
