@@ -50,23 +50,27 @@
     <Compile Include="01_System\INewEable.cs" />
     <Compile Include="01_System\SetIf_T.cs" />
     <Compile Include="01_System\Set_T.cs" />
-    <Compile Include="02_Diagnostics\TestLast.cs" />
-    <None Include="02_Diagnostics\Ext_Stopwatch.cs_" />
-    <None Include="02_Diagnostics\ProgresEr.cs_" />
-    <Compile Include="02_Diagnostics\StackTracer.cs" />
-    <Compile Include="03_VirtualConsole\Ext_Get_ReadLine.cs" />
-    <Compile Include="03_VirtualConsole\Ext_T_ReadLine.cs" />
-    <Compile Include="03_VirtualConsole\VirtualConsole.cs" />
+    <Compile Include="01_System\Diagnostics\Const.cs" />
+    <Compile Include="01_System\Diagnostics\TestLast.cs" />
+    <Compile Include="01_System\Diagnostics\Ext_Stopwatch.cs" />
+    <Compile Include="01_System\Diagnostics\StackTracer.cs" />
+    <Compile Include="02_System_T\Ext_Get_ReadLine.cs" />
+    <Compile Include="02_System_T\Ext_T_ReadLine.cs" />
+    <Compile Include="01_System\VirtualConsole\VirtualConsole.cs" />
+    <Compile Include="02_System_T\Get__Copy_T.cs" />
+    <Compile Include="02_System_T\Get__New_T.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="02_Diagnostics\_ReadMe0.txt" />
-    <Content Include="03_VirtualConsole\_ReadMe.txt" />
+    <Content Include="02_System_T\_ReadMe.txt" />
     <Content Include="ArgeFire.ico" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="04_System\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
