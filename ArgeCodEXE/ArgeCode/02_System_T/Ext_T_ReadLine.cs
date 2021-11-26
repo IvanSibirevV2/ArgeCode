@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
 
 namespace System.VConsole
 {
@@ -35,14 +36,66 @@ namespace System.VConsole
                 if (_this is System.UInt64 _UInt64) return _UInt64.Get_ReadLine().Cast_AsObj().Cast_As<T>();
                 ///////////////////////////////////////////////////////////////////////////////////////////////////
             }
-            throw new System.Exception("Eror:№14.11.2021.12.31: not provided case; update the library later; !!!");
+            ////Жёсткое создание нового экземпляра
+            //Копируем и вставляем вообще все поля.
+            if (false)
+            _Type.Set(a => a.GetFields(System.Diagnostics.Reflection.Const.p_MyBindingFlags).ToList().ForEach((FieldInfo _field) => _field
+                //.Set(c => _field.Set_Att_Writer())
+                .Set(c => (System.Reflection.MemberTypes.Field.ToString() + " ").Write())
+                .SetIf(_field.IsPublic, c => "Public ".Write())
+                .SetIf(_field.IsPrivate, c => "Private ".Write())
+                .SetIf(_field.IsFamily, c => "Family ".Write())
+                .SetIf(_field.IsAssembly, c => "Assembly ".Write())
+                .SetIf(_field.IsStatic, c => "Static ".Write())
+                .SetIf(_field.IsInitOnly, c => "InitOnly ".Write())
+                .SetIf(_field.IsLiteral, _f1: c => "Literal ".Write())
+                .SetIf(_field.IsNotSerialized, c => "NotSerialized ".Write())
+                .SetIf(_field.IsSpecialName, c => "SpecialName ".Write())
+                .SetIf(_field.IsSpecialName, _c => "IsSpecialName ".Write())
+                .Set(c => (_field.FieldType + " " + _Type.ToString() + "." + _field.Name + " ").Write())
+                .SetIf(_this != null, c =>
+                {
+                    System.Object _GetValue = _field.GetValue(_this);
+                    if (_GetValue == null) { ".=null".Write(); } else { (".=" + _GetValue.ToString()).Write(); }
+                }
+                )
+                .Set(c => ";".WriteLine())
+            ))
+            ;
+            if(false)
+            _Type.Set(a =>
+                 a.GetProperties(System.Diagnostics.Reflection.Const.p_MyBindingFlags).ToList().ForEach((PropertyInfo _prop) => _prop
+                    //.Set(b => _prop.Set_Att_Writer())
+                    .Set(b => (System.Reflection.MemberTypes.Property.ToString() + " " + _prop.PropertyType.ToString() + " " + _Type.ToString() + "." + _prop.Name + " ").Write())
+                     //С пропертями все туго, анализ модификаторов доступа не предусмотрен
+                     .SetIf(_prop.CanRead, b => "get ".Write())
+                     .SetIf(_prop.CanWrite, b => "set ".Write())
+                     .SetIf(_prop.CanRead && (_this != null), b => {
+                         System.Object _GetValue = _prop.GetValue(_this);
+                         if (_GetValue == null) { ".=null".Write(); } else { (".=" + _GetValue.ToString()).Write(); }
+                     })
+                 )
+            )
+           ;
+
+            //.ForEach(a=>a.Name);
+            //.ForEach(_field => _field.SetValue(_t, _field.GetValue(_this).Get__Copy()))
+            ;
+            //throw new System.Exception("Eror:№14.11.2021.12.31: not provided case; update the library later; !!!");
             return _this;
         }
+        private class classForTest 
+        {
+            public System.String p_Str = "";
+            public System.Int32 p_Int32 = 32;
+        }
+
         /// <summary>System.VConsole.Ext_T_ReadLine.Test_ReadLine();</summary>
+        [System.Diagnostics.Att_TestLast(_year: 2021, _month: 11, _day: 26, _hour: 9, _minute: 15, _second: 0, _millisecond: 0)]
         public static void Test_ReadLine()
         {
-            
             false.ToString().WriteLine();
+            (new classForTest()).Get__ReadLine(); 
             //false.ReadLine().ToString().WriteLine();
         }
     }

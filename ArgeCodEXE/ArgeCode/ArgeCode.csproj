@@ -59,11 +59,24 @@
     <Compile Include="01_System\VirtualConsole\VirtualConsole.cs" />
     <Compile Include="02_System_T\Get__Copy_T.cs" />
     <Compile Include="02_System_T\Get__New_T.cs" />
+    <Compile Include="02_System_T\Reflection\ClassForTest.cs" />
+    <Compile Include="02_System_T\Reflection\Ext__Set_Assembly_Writer.cs" />
+    <Compile Include="02_System_T\Reflection\Ext__Set_Att_Writer.cs" />
+    <Compile Include="02_System_T\Reflection\Ext__Set_CtorInfo_Writer.cs" />
+    <Compile Include="02_System_T\Reflection\Ext__Set_FieldInfo_Writer.cs" />
+    <Compile Include="02_System_T\Reflection\Ext__Set_MemberInfo_Writer.cs" />
+    <Compile Include="02_System_T\Reflection\Ext__Set_MethodInfo_Writer.cs" />
+    <Compile Include="02_System_T\Reflection\Ext__Set_MetodAccessModifier_Writer.cs" />
+    <Compile Include="02_System_T\Reflection\Ext__Set_PropertyInfo_Writer.cs" />
+    <Compile Include="02_System_T\Reflection\Ext__Set_TypeInterfaces_Writer.cs" />
+    <Compile Include="02_System_T\Reflection\Ext__Set_Writer.cs" />
+    <Compile Include="02_System_T\Reflection\Query.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="02_System_T\_ReadMe.txt" />
+    <Content Include="02_System_T\Reflection\_ReadMe.txt" />
     <Content Include="ArgeFire.ico" />
   </ItemGroup>
   <ItemGroup>
