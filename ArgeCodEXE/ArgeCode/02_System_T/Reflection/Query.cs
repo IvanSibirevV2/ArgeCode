@@ -1,4 +1,4 @@
-﻿namespace Component.Reflection
+﻿namespace System.Diagnostics.Reflection
 {
     using System;
     using System.Collections.Generic;

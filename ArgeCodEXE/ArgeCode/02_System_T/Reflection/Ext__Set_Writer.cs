@@ -1,4 +1,4 @@
-﻿namespace Component.Reflection
+﻿namespace System.Diagnostics.Reflection
 {
     using System;
     using System.Collections.Generic;
@@ -109,7 +109,7 @@
         public static void Test()
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();
-            (new Component.Reflection.ClassForTest()).Set_Writer();
+            (new System.Diagnostics.Reflection.ClassForTest()).Set_Writer();
         }
     }
 }

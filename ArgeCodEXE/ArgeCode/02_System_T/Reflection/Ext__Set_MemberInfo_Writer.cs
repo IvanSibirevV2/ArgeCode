@@ -1,4 +1,4 @@
-﻿namespace Component.Reflection
+﻿namespace System.Diagnostics.Reflection
 {
     using System;
     using System.Collections.Generic;
@@ -23,14 +23,14 @@
             "###".WriteLine().WriteLine();
             "Что выдает Тестируемая функция".WriteLine();
             System.Diagnostics.StackTracer.Get_STS().WriteLine();
-            (new Component.Reflection.ClassForTest())
+            (new System.Diagnostics.Reflection.ClassForTest())
                 .GetType()
                 .Set_MemberInfo_Writer()
             ;
             "###".WriteLine().WriteLine();
             "Что выдает Рефлексионер".WriteLine();
             System.Diagnostics.StackTracer.Get_STS().WriteLine();
-            (new Component.Reflection.ClassForTest())
+            (new System.Diagnostics.Reflection.ClassForTest())
                 .GetType()
                 .Set_Writer()
             ;

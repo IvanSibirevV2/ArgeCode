@@ -1,4 +1,4 @@
-﻿namespace Component.Reflection
+﻿namespace System.Diagnostics.Reflection
 {
     using System;
     using System.Collections.Generic;
@@ -35,14 +35,14 @@
             "###".WriteLine().WriteLine();
             "Что выдает Тестируемая функция".WriteLine();
             System.Diagnostics.StackTracer.Get_STS().WriteLine();
-            (new Component.Reflection.ClassForTest_Ctor())
+            (new System.Diagnostics.Reflection.ClassForTest_Ctor())
                 .GetType()                
                 .Set_ConstructorInfo_Writer()
             ;
             "###".WriteLine().WriteLine();
             "Что выдает Рефлексионер".WriteLine();
             System.Diagnostics.StackTracer.Get_STS().WriteLine();
-            (new Component.Reflection.ClassForTest_Ctor())
+            (new System.Diagnostics.Reflection.ClassForTest_Ctor())
                 .GetType()                
                 .Set_Writer()
             ;
@@ -51,7 +51,7 @@
     /// <summary>Класс для отладки рефлексии/Конструктор</summary>
     public class ClassForTest_Ctor
     {
-        [TestAtt(_String: "dasda")]
+        [System.Diagnostics.Reflection.TestAtt(_String: "dasda")]
         public ClassForTest_Ctor() { }
         public ClassForTest_Ctor(int a) { }
         private ClassForTest_Ctor(int a,int b) { }

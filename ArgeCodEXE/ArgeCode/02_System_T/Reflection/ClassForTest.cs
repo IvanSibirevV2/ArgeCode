@@ -1,4 +1,4 @@
-﻿namespace Component.Reflection
+﻿namespace System.Diagnostics.Reflection
 {
     using System;
     using System.Collections.Generic;
@@ -9,6 +9,7 @@
     /////////////////////////////////////////////////////////////
     public interface IClassForTest
     {
+        
         IClassForTest Set(Action<IClassForTest> x);
         void Foo(int i, int j, string str);
     }
@@ -22,7 +23,7 @@
         //public ClassForTest(int i = 0, System.Boolean _flagan = false) { this.Init(); }
         public IClassForTest Set(Action<IClassForTest> x) { x(this); return this; }
 
-        [TestAtt(_String: "Просто текст")]
+        [System.Diagnostics.Reflection.TestAtt(_String: "Просто текст")]
         public void Foo(int i, int j, string str) { }
         #region ВООБЩЕ ВСЕ ПАРАМЕТРЫ И ПОЛЯ
         public System.String p__StringPublic { get { return p_StringPublic; } set { p_StringPublic = value; } }
@@ -30,7 +31,7 @@
         private System.String p_StringPrivate = "Привет мир";
 
         public static System.String p_StringPublicStatic = "Привет мир";
-        [TestAtt(_String: "Просто текст")]
+        [System.Diagnostics.Reflection.TestAtt(_String: "Просто текст")]
         private static System.String p_StringPrivateStatic = "Привет мир";
 
         public IList<string> p_IListString = (new string[] { "Ghbdt vbh", "Ghbdtn vbh2" }).ToList<string>();
@@ -42,7 +43,7 @@
         public System.Decimal p_SystemDecimal = 0;
         public System.Double p_SystemDouble = 0;
         public System.Int16 p_SystemInt16 = 0;
-        [TestAtt(_String: "Просто текст")]
+        [System.Diagnostics.Reflection.TestAtt(_String: "Просто текст")]
         public System.Int32 p_SystemInt32 = 0;
         public System.Int64 p_SystemInt64 = 0;
         public System.SByte p_SystemSByte = 0;
