@@ -119,7 +119,7 @@ namespace System
             #region GetInterfaces
             _Type.GetInterfaces().Select(a => "Interface " + _Type.ToString() + ":" + a.ToString() + ";").ToList().WriteLine();
             #endregion
-
+            #region GetMethods
             foreach (MethodInfo _method in _Type.GetMethods(p__MyBindingFlags))
             {
                 _method.GetCustomAttributes().Select(a => "[" + a.GetType().ToString() + "] ").ToList().WriteLine();
@@ -140,13 +140,47 @@ namespace System
                 ");".WriteLine();
             }
             "//".WriteLine();
-            /*
-             .SetIf(_IsFieldInf, a => a.Set_FieldInfo_Writer(_Object: _Object))
-            .SetIf(_IsPropInf, a => a.Set_PropertyInfo_Writer(_Object: _Object))
-            .Set(a => "".WriteLine().WriteLine())
-             */
+            #endregion
+            #region GetFields
+            foreach (FieldInfo _field in _Type.GetFields(p__MyBindingFlags))
+            {
+                _field.GetCustomAttributes().Select(a => "[" + a.GetType().ToString() + "] ").ToList().WriteLine();
+                (System.Reflection.MemberTypes.Field.ToString() + " ").Write();
+                if (_field.IsPublic) "Public ".Write();
+                if (_field.IsPrivate) "Private ".Write();
+                if (_field.IsFamily) "Family ".Write();
+                if (_field.IsAssembly) "Assembly ".Write();
+                if (_field.IsStatic) "Static ".Write();
+                if (_field.IsInitOnly) "InitOnly ".Write();
+                if (_field.IsLiteral) "Literal ".Write();
+                if (_field.IsNotSerialized) "NotSerialized ".Write();
+                if (_field.IsSpecialName) "SpecialName ".Write();
+                if (_field.IsSpecialName) "IsSpecialName ".Write();
+                (_field.FieldType + " " + _Type.ToString() + "." + _field.Name + " ").Write();
+                if(_this != null)
+                {
+                    System.Object _GetValue = _field.GetValue(_this);
+                    if (_GetValue == null) { ".=null".Write(); } else { (".=" + _GetValue.ToString()).Write(); }
+                }
+                ";".WriteLine();
+            }
+            "//".WriteLine();
+            #endregion
 
-
+            foreach (PropertyInfo _prop in _Type.GetProperties(p__MyBindingFlags))
+            {
+                _prop.GetCustomAttributes().Select(a => "[" + a.GetType().ToString() + "] ").ToList().WriteLine();
+                (System.Reflection.MemberTypes.Property.ToString() + " " + _prop.PropertyType.ToString()
+                    + " " + _Type.ToString() + "." + _prop.Name + " "
+                ).Write();
+                if (_prop.CanRead) "get ".Write();
+                if (_prop.CanWrite) "set ".Write();
+                if (_prop.CanRead && (_this != null))
+                {
+                    System.Object _GetValue = _prop.GetValue(_this);
+                    if (_GetValue == null) { ".=null".Write(); } else { (".=" + _GetValue.ToString()).Write(); }
+                }
+            }
             return _this;
         }
         [System.Diagnostics.Att_TestLast(_year: 2021, _month: 11, _day: 28, _hour: 12, _minute: 47, _second: 0, _millisecond: 0)]
@@ -156,6 +190,26 @@ namespace System
             (new System.Set__Reflection_WriteThis_T.ClassForTest()).Set__Reflection_WriteThis();
         }
         /////////////////////////////////////////////////////////////////////////////////
+        private class TestAtt : System.Attribute
+        {
+            private System.String p__String = "";
+            public System.String p_String { get => this.p__String; set => this.p__String = value; }
+            public TestAtt() { }
+            public TestAtt(System.String _String = null) => this.Set(
+                _String: _String
+                )
+            ;
+            public TestAtt Set(
+                TestAtt _this = null
+                , System.String _String = null
+            ) => this
+                .SetIf(_this != null, a => this.Set(
+                    _String: _String
+                    )
+                )
+                .SetIf(_String != null, a => this.p_String = _String)
+            ;
+        }
         private interface IClassForTest
         {
 
@@ -172,7 +226,7 @@ namespace System
             //public ClassForTest(int i = 0, System.Boolean _flagan = false) { this.Init(); }
             public IClassForTest Set(Action<IClassForTest> x) { x(this); return this; }
 
-            [System.Diagnostics.Reflection.TestAtt(_String: "Просто текст")]
+            [TestAtt(_String: "Просто текст")]
             public void Foo(int i, int j, string str) { }
             #region ВООБЩЕ ВСЕ ПАРАМЕТРЫ И ПОЛЯ
             public System.String p__StringPublic { get { return p_StringPublic; } set { p_StringPublic = value; } }
@@ -180,7 +234,7 @@ namespace System
             private System.String p_StringPrivate = "Привет мир";
 
             public static System.String p_StringPublicStatic = "Привет мир";
-            [System.Diagnostics.Reflection.TestAtt(_String: "Просто текст")]
+            [TestAtt(_String: "Просто текст")]
             private static System.String p_StringPrivateStatic = "Привет мир";
 
             public IList<string> p_IListString = (new string[] { "Ghbdt vbh", "Ghbdtn vbh2" }).ToList<string>();
@@ -192,7 +246,7 @@ namespace System
             public System.Decimal p_SystemDecimal = 0;
             public System.Double p_SystemDouble = 0;
             public System.Int16 p_SystemInt16 = 0;
-            [System.Diagnostics.Reflection.TestAtt(_String: "Просто текст")]
+            [TestAtt(_String: "Просто текст")]
             public System.Int32 p_SystemInt32 = 0;
             public System.Int64 p_SystemInt64 = 0;
             public System.SByte p_SystemSByte = 0;
