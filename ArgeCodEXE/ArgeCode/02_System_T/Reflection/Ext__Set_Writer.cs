@@ -18,24 +18,10 @@
         /// <param name="_Object">Изучаемый объект</param>
         /// <param name="_ObjectDescription"> Отображать только истиные флаги</param>
         /// <param name="_ObjectFullDescription"> Отобразить вообще все флаги </param>
-        public static void Set_Writer(
-            this Object _Object
-            , System.Boolean _IsMemberInf = true
-            , System.Boolean _IsMethodInf = true
-            , System.Boolean _IsCtorInf = true
-            , System.Boolean _IsFieldInf = true
-            , System.Boolean _IsPropInf = true
-            , System.Boolean _IsInterfacesInf = true
-        ) => _Object.SetIf(_Object == null
-                , a => " _Obj== null".WriteLine()
-                , a => _Object.GetType().Set_Writer(_Object: _Object
-                     , _IsMemberInf: _IsMemberInf
-                     , _IsMethodInf: _IsMethodInf
-                     , _IsCtorInf: _IsCtorInf
-                     , _IsFieldInf: _IsFieldInf
-                     , _IsPropInf: _IsPropInf
-                     , _IsInterfacesInf: _IsInterfacesInf
-                 )
+        public static void Set_Writer(this Object _Object) => _Object
+            .SetIf(_Object == null
+                , _f1: a => " _Obj== null".WriteLine()
+                , _f0: a => _Object.GetType().Set_Writer(_Object: _Object)
             )
         ;
         public static System.Type Set_Writer(this System.Type _Type
@@ -104,8 +90,9 @@
             .SetIf(_IsPropInf, a => a.Set_PropertyInfo_Writer(_Object: _Object))
             .Set(a => "".WriteLine().WriteLine())
         ;
-        
+
         /// <summary>Component.Reflection.Ext_ReflectiOneR.Test();</summary>
+        [System.Diagnostics.Att_TestLast(_year: 2021, _month: 11, _day: 27, _hour: 10, _minute: 28, _second: 0, _millisecond: 0)]
         public static void Test()
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();

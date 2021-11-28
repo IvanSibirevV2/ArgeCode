@@ -18,7 +18,12 @@
         public static void Test()
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();
-
+            (new System.Diagnostics.Reflection.Ext__Set_Att_Writer.classForTest())
+                .GetType()
+                .GetMembers(System.Diagnostics.Reflection.Const.p_MyBindingFlags)
+                .ToList<MemberInfo>()
+                .ForEach(a=>a.Set_Att_Writer())
+            ;
         }
 
         [System.Diagnostics.Reflection.TestAtt(_String: "Интерфейс")]
