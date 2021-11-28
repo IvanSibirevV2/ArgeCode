@@ -10,7 +10,9 @@
     ////////////////////////////////////////////////////////////////////////
     public static class Ext__Set_TypeInterfaces_Writer
     {
-        public static System.Type Set_TypeInterfaces_Writer(this System.Type _Type) => _Type.Set(a =>a.GetInterfaces().ToList().ForEach(i => ("Interface " + _Type.ToString() + ":" + i.ToString() + ";").WriteLine()));
+        public static System.Type Set_TypeInterfaces_Writer(this System.Type _Type) =>
+            
+            _Type.Set(a =>a.GetInterfaces().ToList().ForEach(i => ("Interface " + _Type.ToString() + ":" + i.ToString() + ";").WriteLine()));
 
         /// <summary>Component.Reflection.Ext__Set_TypeInterfaces_Writer.Test();</summary>
         public static void Test()
