@@ -24,7 +24,7 @@ namespace System.VConsole
         /// </summary>
         public static T Get__ReadLine<T>(this T _this)
         {
-            if (_this == null) { throw new System.Exception("Eror:№14.11.2021.12.19:T.ReadLine<T>(this T _this);  _this == null   !!!"); return _this; }
+            if (_this == null) _this = _this.Get__New();
             if (_this is IReadLineEable _IReadLineEable) return (T)_IReadLineEable.Get_ReadLine();
             System.Type _Type = _this.GetType();
             {
@@ -44,62 +44,59 @@ namespace System.VConsole
                 if (_this is System.UInt64 _UInt64) return _UInt64.Get_ReadLine().Cast_AsObj().Cast_As<T>();
                 ///////////////////////////////////////////////////////////////////////////////////////////////////
             }
-            ////Жёсткое создание нового экземпляра
-            //Копируем и вставляем вообще все поля.
-            if (false)
-            _Type.Set(a => a.GetFields(System.Diagnostics.Reflection.Const.p_MyBindingFlags).ToList().ForEach((FieldInfo _field) => _field
-                //.Set(c => _field.Set_Att_Writer())
-                .Set(c => (System.Reflection.MemberTypes.Field.ToString() + " ").Write())
-                .SetIf(_field.IsPublic, c => "Public ".Write())
-                .SetIf(_field.IsPrivate, c => "Private ".Write())
-                .SetIf(_field.IsFamily, c => "Family ".Write())
-                .SetIf(_field.IsAssembly, c => "Assembly ".Write())
-                .SetIf(_field.IsStatic, c => "Static ".Write())
-                .SetIf(_field.IsInitOnly, c => "InitOnly ".Write())
-                .SetIf(_field.IsLiteral, _f1: c => "Literal ".Write())
-                .SetIf(_field.IsNotSerialized, c => "NotSerialized ".Write())
-                .SetIf(_field.IsSpecialName, c => "SpecialName ".Write())
-                .SetIf(_field.IsSpecialName, _c => "IsSpecialName ".Write())
-                .Set(c => (_field.FieldType + " " + _Type.ToString() + "." + _field.Name + " ").Write())
-                .SetIf(_this != null, c =>
-                {
-                    System.Object _GetValue = _field.GetValue(_this);
-                    if (_GetValue == null) { ".=null".Write(); } else { (".=" + _GetValue.ToString()).Write(); }
-                }
+            //Метод получения пунктов меню для редактирования полей Fields
+            List<System.VConsole.GUIVC> Get_ListGUIVC_For_Fields()
+            {
+                return _Type.GetFields(System.Diagnostics.Reflection.Const.p_MyBindingFlags)
+                    .Select(_field => new System.VConsole.GUIVC()
+                        .Set(_UpDate: a =>
+                            a.p_Title = System.Reflection.MemberTypes.Field.ToString() + " "
+                            + (_field.IsPublic ? "Public " : "") + (_field.IsPrivate ? "Private " : "") + (_field.IsFamily ? "Family " : "")
+                            + (_field.IsAssembly ? "Assembly " : "") + (_field.IsStatic ? "Static " : "") + (_field.IsInitOnly ? "InitOnly " : "")
+                            + (_field.IsLiteral ? "Literal " : "") + (_field.IsNotSerialized ? "NotSerialized " : "")
+                            + (_field.IsSpecialName ? "SpecialName " : "") + (_field.IsSpecialName ? "IsSpecialName " : "")
+                            + _field.FieldType + " " + _Type.ToString() + "." + _field.Name + " "
+                            + "".GetIf(_Bool: _this == null, _f1: b => ".this == null",
+                                _f0: b => _field.GetValue(_this).GetIf(_fBool: c => c == null, _f1: c => ".=null", _f0: c => ".=" + c.ToString()))
+                        )
+                        .Set(_Act: a => _this.SetIf(_Bool: _this != null, _f1: b => _field.SetValue(_this, _field.GetValue(_this).Get__ReadLine())))
+                    ).ToList();
+            }
+            List<System.VConsole.GUIVC> Get_ListGUIVC_For_Properties()
+            {
+                return _Type.GetProperties(System.Diagnostics.Reflection.Const.p_MyBindingFlags)
+                    .Select(_prop => new System.VConsole.GUIVC()
+                        .Set(_UpDate: a =>
+                            a.p_Title = System.Reflection.MemberTypes.Property.ToString() + " " + _prop.PropertyType.ToString() + " " + _Type.ToString() + "." + _prop.Name + " "
+                            + (_prop.CanRead ? "get " : "") + (_prop.CanWrite ? "set " : "")
+                            + "".GetIf(_Bool: _this == null, _f1: b => ".this == null",
+                                _f0: b => _prop.GetValue(_this).GetIf(_fBool: c => c == null, _f1: c => ".=null", _f0: c => ".=" + c.ToString()))
+                        )
+                        .Set(_Act: a =>_this.SetIf(_Bool: (_this != null) && _prop.CanWrite, _f1: b =>_prop.SetValue(_this, _prop.GetValue(_this).Get__ReadLine())))
+                    ).ToList();
+            }
+            //Далее пока не рабочий код
+            System.VConsole.GUIVC _GUIVC = new System.VConsole.GUIVC()
+                .Set(_Title: "Вод полей объекта", _IsRepeater: true)
+                .Set(_GUIVC_S:
+                    (new List<GUIVC>())
+                    .Set_Add(new System.VConsole.GUIVC().Set(_Title:"Выход",_Act:a=> a.p_Sender.p_IsRepeater=false))
+                    .Set(a=> a.AddRange(Get_ListGUIVC_For_Fields())).Set(a => a.AddRange(Get_ListGUIVC_For_Properties()))
                 )
-                .Set(c => ";".WriteLine())
-            ))
+                .Do()
             ;
-            if(false)
-            _Type.Set(a =>
-                 a.GetProperties(System.Diagnostics.Reflection.Const.p_MyBindingFlags).ToList().ForEach((PropertyInfo _prop) => _prop
-                    //.Set(b => _prop.Set_Att_Writer())
-                    .Set(b => (System.Reflection.MemberTypes.Property.ToString() + " " + _prop.PropertyType.ToString() + " " + _Type.ToString() + "." + _prop.Name + " ").Write())
-                     //С пропертями все туго, анализ модификаторов доступа не предусмотрен
-                     .SetIf(_prop.CanRead, b => "get ".Write())
-                     .SetIf(_prop.CanWrite, b => "set ".Write())
-                     .SetIf(_prop.CanRead && (_this != null), b => {
-                         System.Object _GetValue = _prop.GetValue(_this);
-                         if (_GetValue == null) { ".=null".Write(); } else { (".=" + _GetValue.ToString()).Write(); }
-                     })
-                 )
-            )
-           ;
-
-            //.ForEach(a=>a.Name);
-            //.ForEach(_field => _field.SetValue(_t, _field.GetValue(_this).Get__Copy()))
-            ;
-            //throw new System.Exception("Eror:№14.11.2021.12.31: not provided case; update the library later; !!!");
+            
             return _this;
         }
         private class classForTest 
         {
             public System.String p_Str = "";
             public System.Int32 p_Int32 = 32;
+            public System.Int16 p_Int16 { get; set; }
         }
 
         /// <summary>System.VConsole.Ext_T_ReadLine.Test_ReadLine();</summary>
-        [System.Diagnostics.Att_TestLast(_year: 2021, _month: 11, _day: 26, _hour: 9, _minute: 15, _second: 0, _millisecond: 0)]
+        [System.Diagnostics.Att_TestLast(_year: 2021, _month: 12, _day: 02, _hour: 14, _minute: 31, _second: 0, _millisecond: 0)]
         public static void Test_ReadLine()
         {
             false.ToString().WriteLine();

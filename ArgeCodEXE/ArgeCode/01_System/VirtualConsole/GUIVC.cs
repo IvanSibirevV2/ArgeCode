@@ -19,6 +19,7 @@ namespace System.VConsole
         public System.Action<GUIVC> p_UpDate = x => { };
         /// <summary> Сбласываемый в собитии p_Act параметр. Когда установлен в false происходит либо однократное исполнение меню, либо разрыв многократного исполнения.</summary>
         public System.Boolean p_IsRepeater = false;
+        public dynamic ResValue = null;
         private System.Byte p_ByteId = 0;
         ////////////////////////////////////////////////////////////////
         public GUIVC() { }
