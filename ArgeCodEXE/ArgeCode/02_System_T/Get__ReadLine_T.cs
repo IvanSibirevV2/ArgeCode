@@ -104,6 +104,5 @@ namespace System.VConsole
             //false.ReadLine().ToString().WriteLine();
         }
     }
-    ///////////////////////////////////////////
-    
+    ///////////////////////////////////////////   
 }

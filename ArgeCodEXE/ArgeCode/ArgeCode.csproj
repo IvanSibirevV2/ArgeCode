@@ -62,6 +62,8 @@
     <Compile Include="01_System\VirtualConsole\VirtualConsole.cs" />
     <Compile Include="02_System_T\Get__Copy_T.cs" />
     <Compile Include="02_System_T\Get__New_T.cs" />
+    <Compile Include="04_IMap\Att_MapLast.cs" />
+    <Compile Include="04_IMap\IMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -72,8 +74,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="04_System\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -31,7 +31,6 @@ namespace System.Diagnostics
             p__year = _year; p__month = _month; p__day = _day; p__hour = _hour;
             p__minute = _minute; p__second = _second; p__millisecond = _millisecond;
         }
-
         public override string ToString()
         {return this.GetType().FullName.ToString()+"[" + this.p_DateTime.ToString()+"]";}
     }
