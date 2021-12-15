@@ -64,7 +64,10 @@
     <Compile Include="02_System_T\Get__New_T.cs" />
     <Compile Include="03_IMap\Att_MapLast.cs" />
     <Compile Include="03_IMap\IMap.cs" />
-    <Compile Include="08_CodeGearER\Ext_CodeGearER.cs" />
+    <Compile Include="04_CodeGearER\Ext_CodeGearER.cs" />
+    <Compile Include="12_CMDoor_V0\CMDoor_MicrosoftFail.cs" />
+    <Compile Include="12_CMDoor_V0\CMDoor_V0.cs" />
+    <Compile Include="12_CMDoor_V0\Ext_DateTime_NowNew.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
   </ItemGroup>
