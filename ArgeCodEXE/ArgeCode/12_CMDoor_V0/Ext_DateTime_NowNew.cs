@@ -19,10 +19,10 @@ namespace System
             p_LocalLastDateTime = _this;return _this;
         }
         //////////////////////////////////////////////////////
-        [Component.Diagnostics.Att_TestLast(_year: 2020, _month: 10, _day: 07, _hour: 11, _minute: 35, _second: 0, _millisecond: 1)]
+        [System.Diagnostics.Att_TestLast(_year: 2020, _month: 10, _day: 07, _hour: 11, _minute: 35, _second: 0, _millisecond: 1)]
         public static void Test()
         {
-            Component.StaticC.CheckStackTracer();
+            System.Diagnostics.StackTracer.Get_STS().WriteLine();
             for (int i = 0; i < 100; i++)
                 System.DateTime.Now.NowNew().ToString("yyyyMMdd_hhmmss_ffff-").WriteLine()
             ;
