@@ -16,6 +16,7 @@ namespace ArgeCodEXE
         static void Main(string[] args)
         {
             System.Console.WriteLine("Привет мир");
+            "Привет мир".WriteLine().WriteLine().ReadLine();
             //Component.CodeGearER.CodeGear.Test_20200529_0914();
             System.Diagnostics.TestLast.Do();
             System.Console.ReadLine();

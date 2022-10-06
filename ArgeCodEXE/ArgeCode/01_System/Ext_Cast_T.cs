@@ -23,7 +23,7 @@
             "Привет мир".Cast_As<System.Object>();
             //Равносильно
             var Obj = ((System.Object)"Привет мир");
-            "Привет мир".Cast_As<System.Object>().Cast_AsObj();
+            "Привет мир".Cast_AsObj().Cast_As<System.String>();            
             //Равносильно
             System.String Str = ((System.String)(System.Object)"Привет мир");
             //Актуальность:
