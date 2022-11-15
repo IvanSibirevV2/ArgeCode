@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE57A372-6117-4E1A-9466-E3B9826320E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArgeCode</RootNamespace>
+    <AssemblyName>ArgeCode</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ArgeFire.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="01_System\Ext_Cast_T.cs" />
+    <Compile Include="01_System\Ext_List_T.cs" />
+    <Compile Include="01_System\GetIf_T.cs" />
+    <Compile Include="01_System\Get_T.cs" />
+    <Compile Include="01_System\INewEable.cs" />
+    <Compile Include="01_System\SetIf_T.cs" />
+    <Compile Include="01_System\Set_T.cs" />
+    <Compile Include="01_System\Diagnostics\Const.cs" />
+    <Compile Include="01_System\Diagnostics\TestLast.cs" />
+    <Compile Include="01_System\Diagnostics\Ext_Stopwatch.cs" />
+    <Compile Include="01_System\Diagnostics\StackTracer.cs" />
+    <Compile Include="01_System\VirtualConsole\Ext_Get_ReadLine.cs" />
+    <Compile Include="01_System\VirtualConsole\GUIVC.cs" />
+    <Compile Include="02_System_T\Set__Reflection_WriteThis_T.cs" />
+    <Compile Include="02_System_T\Get__ReadLine_T.cs" />
+    <Compile Include="01_System\VirtualConsole\VirtualConsole.cs" />
+    <Compile Include="02_System_T\Get__Copy_T.cs" />
+    <Compile Include="02_System_T\Get__New_T.cs" />
+    <Compile Include="03_IMap\Att_MapLast.cs" />
+    <Compile Include="03_IMap\IMap.cs" />
+    <Compile Include="04_CodeGearER\Ext_CodeGearER.cs" />
+    <Compile Include="12_CMDoor_V0\CMDoor_MicrosoftFail.cs" />
+    <Compile Include="12_CMDoor_V0\CMDoor_V0.cs" />
+    <Compile Include="12_CMDoor_V0\Ext_DateTime_NowNew.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="02_System_T\_ReadMe.txt" />
+    <Content Include="ArgeFire.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,13 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using System.Runtime.InteropServices;
-using System.Threading;
-using System.Diagnostics;
-
 
 namespace ArgeCodEXE
 {
@@ -15,11 +6,7 @@ namespace ArgeCodEXE
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Привет мир");
-            "Привет мир".WriteLine().WriteLine().ReadLine();
-            //Component.CodeGearER.CodeGear.Test_20200529_0914();
-            System.Diagnostics.TestLast.Do();
-            System.Console.ReadLine();
+            Console.WriteLine("Hello World!");
         }
     }
 }
