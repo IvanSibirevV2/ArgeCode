@@ -1,5 +1,9 @@
-C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\netcoreapp3.1\ArgeCode.csproj.AssemblyReference.cache
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\bin\Debug\netcoreapp3.1\ArgeCode.deps.json
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\bin\Debug\netcoreapp3.1\ArgeCode.dll
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\bin\Debug\netcoreapp3.1\ArgeCode.pdb
 C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\netcoreapp3.1\ArgeCode.GeneratedMSBuildEditorConfig.editorconfig
 C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\netcoreapp3.1\ArgeCode.AssemblyInfoInputs.cache
 C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\netcoreapp3.1\ArgeCode.AssemblyInfo.cs
 C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\netcoreapp3.1\ArgeCode.csproj.CoreCompileInputs.cache
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\netcoreapp3.1\ArgeCode.dll
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\netcoreapp3.1\ArgeCode.pdb

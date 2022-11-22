@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ArgeCode</id>
+    <version>0.0.3</version>
+    <authors>SibirevIvanV2</authors>
+    <icon>ArgeFire.png</icon>
+    <projectUrl>https://github.com/IvanSibirevV2/ArgeCode.git</projectUrl>
+    <description>C# FullFireSyntacticExtension ToFunc-Programming</description>
+    <releaseNotes>ArgeCode.0.0.1 License free for this version
+Adds GenericExtension LambdaContext: 
+ T.Set(a=&gt;{}).Set(b=&gt;{}).Set(c=&gt;{}).Get(c=&gt;{return c+"!!!";});
+ T.SetIf(_Bool:true, _f1:a=&gt;{}, _f0:b=&gt;{}).Set(c=&gt;{});
+ T.SetIf( _fBool:a=&gt;{return true;}, _f1:a=&gt;{}, _f0:b=&gt;{}).Set(c=&gt;{});
+ T.GetIf(_Bool:true, _f1:a=&gt;{return 8;}, _f0:b=&gt;{return "8"}).Set(c=&gt;{});
+ T.GetIf( _fBool:a=&gt;{return true;}, _f1:a=&gt;{return 8;}, _f0:b=&gt;{return "8"}).Set(c=&gt;{});
+Adds System.Diagnostics.TestLast.Do(); what call
+ [System.Diagnostics.Att_TestLast(DataTime)]
+ public static void Test_1() with max DataTime	
+Adds System.Diagnostics.StackTracer.Get_STS(); what return
+ string description call point parent method.
+Adds System.VConsole.Config.p_VirtualConsole...; what Extend  System.String 
+ System.String _str = "HelloWorld".Write().WriteLine().ReadLine(); 
+The continuation will be in a hurry...</releaseNotes>
+    <copyright>ArgeCode.0.0.3 License free for this version</copyright>
+    <tags>C# TestLast Unit Tests Generic System Extension Reflection Functional Paradigm Func ArgeCode</tags>
+    <repository type="Git" url="https://github.com/IvanSibirevV2/ArgeCode.git" />
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\bin\Debug\netcoreapp3.1\ArgeCode.dll" target="lib\netcoreapp3.1\ArgeCode.dll" />
+    <file src="C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeFire.png" target="ArgeFire.png" />
+  </files>
+</package>

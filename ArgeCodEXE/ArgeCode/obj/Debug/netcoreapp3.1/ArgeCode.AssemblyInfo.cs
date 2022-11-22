@@ -11,13 +11,16 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ArgeCode")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Russia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("ArgeCode.0.0.3 License free for this version")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("C# FullFireSyntacticExtension ToFunc-Programming")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.3.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArgeCode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArgeCode")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("0.0.3.0")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/IvanSibirevV2/ArgeCode.git")]
 
 // Создано классом WriteCodeFragment MSBuild.
 
