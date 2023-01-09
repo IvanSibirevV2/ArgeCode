@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgeCodEXE", "ArgeCodEXE\ArgeCodEXE.csproj", "{D861FBF7-5205-48A6-A247-15B7EEF6109B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgeCode", "ArgeCode\ArgeCode.csproj", "{058B02E0-3DEF-4B3B-98D7-BF1EDBDC98FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D861FBF7-5205-48A6-A247-15B7EEF6109B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D861FBF7-5205-48A6-A247-15B7EEF6109B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D861FBF7-5205-48A6-A247-15B7EEF6109B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D861FBF7-5205-48A6-A247-15B7EEF6109B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{058B02E0-3DEF-4B3B-98D7-BF1EDBDC98FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{058B02E0-3DEF-4B3B-98D7-BF1EDBDC98FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{058B02E0-3DEF-4B3B-98D7-BF1EDBDC98FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{058B02E0-3DEF-4B3B-98D7-BF1EDBDC98FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22101733-A840-4022-96A8-207C364F5293}
+	EndGlobalSection
+EndGlobal

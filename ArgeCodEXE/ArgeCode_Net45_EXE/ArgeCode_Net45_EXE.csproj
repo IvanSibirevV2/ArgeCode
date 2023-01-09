@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6C0FEB37-7EE1-4EE8-B022-81E3AA8DF471}</ProjectGuid>
+    <ProjectGuid>{5894153E-EB65-47D7-910D-41C495498C15}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ArgeCodEXE</RootNamespace>
-    <AssemblyName>ArgeCodEXE</AssemblyName>
+    <RootNamespace>ArgeCode_Net45_EXE</RootNamespace>
+    <AssemblyName>ArgeCode_Net45_EXE</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
