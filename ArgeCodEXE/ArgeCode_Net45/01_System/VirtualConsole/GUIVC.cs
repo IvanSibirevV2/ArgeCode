@@ -57,7 +57,7 @@ namespace System.VConsole
             return this;
         }
         /// <summary>System.VConsole.Ext_T_ReadLine.Test_ReadLine();</summary>
-        [System.Diagnostics.Att_TestLast(_year: 2021, _month: 11, _day: 30, _hour: 18, _minute: 10, _second: 2, _millisecond: 0)]
+        [System.Diagnostics.TestLastMethod(_year: 2021, _month: 11, _day: 30, _hour: 18, _minute: 10, _second: 2, _millisecond: 0)]
         public static void Test2()
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();
@@ -73,7 +73,7 @@ namespace System.VConsole
            ;
         }
         /// <summary>System.VConsole.Ext_T_ReadLine.Test_ReadLine();</summary>
-        [System.Diagnostics.Att_TestLast(_year: 2021, _month: 11, _day: 30, _hour: 18, _minute: 10, _second: 0, _millisecond: 0)]
+        [System.Diagnostics.TestLastMethod(_year: 2021, _month: 11, _day: 30, _hour: 18, _minute: 10, _second: 0, _millisecond: 0)]
         public static void Test()
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();

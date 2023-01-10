@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ArgeCode_Net45\ArgeCode_Net45.csproj">
+      <Project>{5bf139fe-510b-4ac6-9665-9b2fb4183886}</Project>
+      <Name>ArgeCode_Net45</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -70,7 +70,7 @@ echo Привет мир
             return _Resalt;
         }
         //////////////////////////////////////////////////////
-        [System.Diagnostics.Att_TestLast(_year: 2020, _month: 08, _day: 05, _hour: 0, _minute: 59, _second: 0, _millisecond: 0)]
+        [System.Diagnostics.TestLastMethod(_year: 2020, _month: 08, _day: 05, _hour: 0, _minute: 59, _second: 0, _millisecond: 0,_StrComment: "Тест №0 System.CMD.CMDoor_V0")]
         public static void Test()
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();
@@ -79,7 +79,7 @@ echo Привет мир
             "<<<:System.CMD.CMDoor_V0.Test():<<<".WriteLine();
         }
         //////////////////////////////////////////////////////
-        [System.Diagnostics.Att_TestLast(_year: 2020, _month: 10, _day: 26, _hour: 13, _minute: 35, _second: 0, _millisecond: 0)]
+        [System.Diagnostics.TestLastMethod(_year: 2020, _month: 10, _day: 26, _hour: 13, _minute: 35, _second: 0, _millisecond: 0,_StrComment: "Тест №2 System.CMD.CMDoor_V0")]
         public static void Test_2()
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();

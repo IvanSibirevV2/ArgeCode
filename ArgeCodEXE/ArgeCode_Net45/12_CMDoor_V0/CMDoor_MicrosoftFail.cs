@@ -72,7 +72,7 @@ echo Привет мир
             return _Resalt;
         }
         //////////////////////////////////////////////////////
-        [System.Diagnostics.Att_TestLast(_year: 2020, _month: 08, _day: 06, _hour: 19, _minute: 50, _second: 0, _millisecond: 0)]
+        [System.Diagnostics.TestLastMethod(_year: 2020, _month: 08, _day: 06, _hour: 19, _minute: 50, _second: 0, _millisecond: 0,_StrComment: "Тест окна в CMD корявыми средствами от Microsoft")]
         public static void Test()
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();

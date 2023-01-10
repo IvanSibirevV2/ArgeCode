@@ -36,7 +36,7 @@ namespace System.Diagnostics.Map
                 .Cast_As<IMap<T>>()
             ;
         }
-        [System.Diagnostics.Att_TestLast(_year: 2021, _month: 12, _day: 09, _hour: 11, _minute: 59, _second: 0, _millisecond: 0)]
+        [System.Diagnostics.TestLastMethod(_year: 2021, _month: 12, _day: 09, _hour: 11, _minute: 59, _second: 0, _millisecond: 0)]
         public static void Test()
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();

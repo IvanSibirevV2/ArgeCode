@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace System
 {
+    /// <summary> https://metanit.com/sharp/tutorial/19.2.php </summary>
     public static class Ext_DateTime_NowNew
     {
         /// <summary>Локальное прошлое вызванное дата время. Используется только в этом контексте.</summary>
@@ -19,7 +20,7 @@ namespace System
             p_LocalLastDateTime = _this; return _this;
         }
         //////////////////////////////////////////////////////
-        [System.Diagnostics.Att_TestLast(_year: 2020, _month: 10, _day: 07, _hour: 11, _minute: 35, _second: 0, _millisecond: 1)]
+        [System.Diagnostics.TestLastMethod(_year: 2020, _month: 10, _day: 07, _hour: 11, _minute: 35, _second: 0, _millisecond: 1,_StrComment:"Тест Вывода даты времени в определенном формате")]
         public static void Test()
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();

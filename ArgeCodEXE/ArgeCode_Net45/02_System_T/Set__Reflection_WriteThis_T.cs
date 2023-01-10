@@ -183,7 +183,7 @@ namespace System
             }
             return _this;
         }
-        [System.Diagnostics.Att_TestLast(_year: 2021, _month: 11, _day: 28, _hour: 12, _minute: 47, _second: 0, _millisecond: 0)]
+        [System.Diagnostics.TestLastMethod(_year: 2021, _month: 11, _day: 28, _hour: 12, _minute: 47, _second: 0, _millisecond: 0)]
         public static void Test()
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();

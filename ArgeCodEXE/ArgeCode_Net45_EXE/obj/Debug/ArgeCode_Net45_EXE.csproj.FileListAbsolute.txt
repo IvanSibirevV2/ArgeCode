@@ -1,0 +1,10 @@
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net45_EXE\bin\Debug\ArgeCode_Net45_EXE.exe.config
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net45_EXE\bin\Debug\ArgeCode_Net45_EXE.exe
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net45_EXE\bin\Debug\ArgeCode_Net45_EXE.pdb
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net45_EXE\bin\Debug\ArgeCode_Net45.dll
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net45_EXE\bin\Debug\ArgeCode_Net45.pdb
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net45_EXE\obj\Debug\ArgeCode_Net45_EXE.csproj.AssemblyReference.cache
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net45_EXE\obj\Debug\ArgeCode_Net45_EXE.csproj.CoreCompileInputs.cache
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net45_EXE\obj\Debug\ArgeCode_Net45_EXE.csproj.CopyComplete
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net45_EXE\obj\Debug\ArgeCode_Net45_EXE.exe
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net45_EXE\obj\Debug\ArgeCode_Net45_EXE.pdb

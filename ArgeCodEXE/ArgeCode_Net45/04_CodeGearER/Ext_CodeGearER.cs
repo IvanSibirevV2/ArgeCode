@@ -29,7 +29,7 @@ namespace System.CodeGearER
             }
             return _CompilerResults.CompiledAssembly;
         }
-        [System.Diagnostics.Att_TestLast(_year: 2021, _month: 12, _day: 10, _hour: 22, _minute: 26, _second: 0, _millisecond: 0)]
+        [System.Diagnostics.TestLastMethod(_year: 2021, _month: 12, _day: 10, _hour: 22, _minute: 26, _second: 0, _millisecond: 0,_StrComment:"Тест компиляции и исполнения кода из текста")]
         public static void Test()
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();
