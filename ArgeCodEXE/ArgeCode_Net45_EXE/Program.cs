@@ -30,7 +30,19 @@ namespace ArgeCode_Net45_EXE
                 System.Diagnostics.TestLast.Get_TestS().ForEach(a => a.Get_Delegate_AS<System.Action>()());
             }
             System.Console.WriteLine("Запустим последний из них");
-            System.Diagnostics.TestLast.Do();
+            if (false)
+            {
+                System.Diagnostics.TestLast.Do();
+            }
+            if (!false)
+            {
+                System.Diagnostics.TestLast
+                .Get_TestS()
+                .Get_LastTestMetod()
+                .WriteThis()
+                .Get_Delegate_AS<System.Func<System.Boolean>>()()
+            ;
+            }
             System.Console.ReadLine();
         }
     }

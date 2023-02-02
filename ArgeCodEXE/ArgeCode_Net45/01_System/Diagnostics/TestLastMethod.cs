@@ -91,7 +91,8 @@ namespace System.Diagnostics
         /// </summary>
         public static void Do()
         {
-            Get_TestS()
+            System.Diagnostics.TestLast
+                .Get_TestS()
                 .Get_LastTestMetod()
                 .WriteThis()
                 .Get_Delegate_AS<System.Action>()()
@@ -105,12 +106,17 @@ namespace System.Diagnostics
             System.Diagnostics.TestLast.Do();
         }
         //Пример того, как тестовые функции можно мапить сейчас
-        [System.Diagnostics.TestLastMethod(_year: 2021, _month: 11, _day: 17, _hour: 15, _minute: 05, _second: 0, _millisecond: 0,_StrComment:"Тест №0. Мапинг тестовых функций ")]
+        [System.Diagnostics.TestLastMethod(_year: 2023, _month: 2, _day: 2, _hour: 18, _minute: 23, _second: 0, _millisecond: 0,_StrComment:"Тест №0. Мапинг тестовых функций ")]
         public static void Test_0()
         {
             System.Console.WriteLine(System.Diagnostics.StackTracer.Get_STS());
         }
-
+        [System.Diagnostics.TestLastMethod(_year: 2023, _month: 2, _day: 2, _hour: 18, _minute: 23, _second: 1, _millisecond: 0, _StrComment: "Тест №0. Мапинг тестовых функций ")]
+        public static System.Boolean Test_0XT78587GF874444G()
+        {
+            System.Console.WriteLine(System.Diagnostics.StackTracer.Get_STS());
+            return (System.Boolean)true;
+        }
         [System.Diagnostics.TestLastMethod(_year: 2021, _month: 11, _day: 17, _hour: 15, _minute: 06, _second: 0, _millisecond: 0, _StrComment: "Тест №2. Мапинг тестовых функций ")]
         public static void Test_1()
         {
