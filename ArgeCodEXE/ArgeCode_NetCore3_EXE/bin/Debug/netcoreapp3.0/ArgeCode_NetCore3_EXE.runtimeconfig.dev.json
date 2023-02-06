@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\SibNout2020\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\SibNout2020\\.nuget\\packages"
+    ]
+  }
+}

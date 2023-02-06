@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Qr0kH3/B05KzummTbg2bCSsEtN5YFMjWapyPok/+jerNS/QV4JrijJiIJ5EvVMqtHeHOdYsBmz3pOmMLBVHElw==",
+  "dgSpecHash": "5Kd1inXk2i06m/bZunyjTKoXmSgyTyQ4AVpXf4Lxn/r8qkg46iZRm0pejrWdHV5Kx8teXfoMRQafMAhzbZqbYg==",
   "success": true,
   "projectFilePath": "C:\\D\\Git_Hub\\ArgeCode\\ArgeCodEXE\\ArgeCode_NetCore3_EXE\\ArgeCode_NetCore3_EXE.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\SibNout2020\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\SibNout2020\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\SibNout2020\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\SibNout2020\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

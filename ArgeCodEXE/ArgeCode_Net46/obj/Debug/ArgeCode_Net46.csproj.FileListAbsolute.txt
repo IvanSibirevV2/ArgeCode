@@ -1,0 +1,6 @@
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46\bin\Debug\ArgeCode_Net46.dll
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46\bin\Debug\ArgeCode_Net46.pdb
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46\obj\Debug\ArgeCode_Net46.csproj.AssemblyReference.cache
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46\obj\Debug\ArgeCode_Net46.csproj.CoreCompileInputs.cache
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46\obj\Debug\ArgeCode_Net46.dll
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46\obj\Debug\ArgeCode_Net46.pdb

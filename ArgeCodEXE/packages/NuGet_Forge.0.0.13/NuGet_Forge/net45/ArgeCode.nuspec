@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ArgeCode</id>
+    <version>0.0.4</version>
+    <authors>SibirevIvanV2</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <icon>ArgeFire.png</icon>
+    <projectUrl>https://github.com/IvanSibirevV2/ArgeCode.git</projectUrl>
+    <description>C# FullFireSyntacticExtension ToFunc-Programming</description>
+    <releaseNotes>0.0.4 Only .net 45 and later
+0.0.3 Only Core 3.1 and later
+there is no reason to support Core because there is no stability</releaseNotes>
+    <tags>C# TestLast Unit Tests Generic System Extension Reflection Functional Paradigm Func ArgeCode</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5" />
+    </dependencies>
+  </metadata>
+</package>
