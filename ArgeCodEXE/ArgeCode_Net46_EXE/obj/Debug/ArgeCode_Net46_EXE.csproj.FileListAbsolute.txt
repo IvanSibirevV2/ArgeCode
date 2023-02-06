@@ -1,0 +1,11 @@
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46_EXE\bin\Debug\ArgeCode_Net46_EXE.exe.config
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46_EXE\bin\Debug\ArgeCode_Net46_EXE.exe
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46_EXE\bin\Debug\ArgeCode_Net46_EXE.pdb
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46_EXE\bin\Debug\ArgeCode_Net46.dll
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46_EXE\bin\Debug\ArgeCode_Net46.pdb
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46_EXE\obj\Debug\ArgeCode_Net46_EXE.csproj.AssemblyReference.cache
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46_EXE\obj\Debug\ArgeCode_Net46_EXE.csproj.SuggestedBindingRedirects.cache
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46_EXE\obj\Debug\ArgeCode_Net46_EXE.csproj.CoreCompileInputs.cache
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46_EXE\obj\Debug\ArgeCode_Net46_EXE.csproj.CopyComplete
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46_EXE\obj\Debug\ArgeCode_Net46_EXE.exe
+C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode_Net46_EXE\obj\Debug\ArgeCode_Net46_EXE.pdb

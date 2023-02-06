@@ -86,16 +86,36 @@ namespace System.Diagnostics
 
         public static T Get_Delegate_AS<T>(this TestLastMethod _TestLastMethod) where T : System.Delegate
         { return _TestLastMethod.p__Target_MethodInfo.CreateDelegate(typeof(T)).Cast_As<T>(); }
-        /// <summary>
-        /// Запуск последнего тестового метода
-        /// </summary>
+        /// <summary> Запуск последнего тестового метода, возвращающего System.Boolean </summary>
+        public static System.Boolean Do_IfBoolean()
+        {
+            return System.Diagnostics.TestLast.Get_TestS()
+                .Where(a => a.p__Target_MethodInfo.ReturnParameter.ParameterType == typeof(System.Boolean)).ToList()
+                .Get_LastTestMetod().WriteThis().Get_Delegate_AS<System.Func<System.Boolean>>()()
+            ;
+        }
+        /// <summary> Запуск вообще всех тестов bool. Предупреждение тест bool не может использовать пользовательский ввод и вывод</summary>
+        public static System.Boolean Do_IfBoolean_Oll()
+        {
+            return System.Diagnostics.TestLast.Get_TestS()
+                .Where(a => a.p__Target_MethodInfo.ReturnParameter.ParameterType == typeof(System.Boolean)).ToList()
+                .Select(a => a.Get_Delegate_AS<System.Func<System.Boolean>>()()).Aggregate((a,b)=>a&b)
+            ;
+        }
+        /// <summary> Запуск последнего тестового метода, возвращающего System.Boolean </summary>
         public static void Do()
         {
-            System.Diagnostics.TestLast
-                .Get_TestS()
-                .Get_LastTestMetod()
-                .WriteThis()
-                .Get_Delegate_AS<System.Action>()()
+            System.Diagnostics.TestLast.Get_TestS()
+                .Where(a => a.p__Target_MethodInfo.ReturnParameter.ParameterType == typeof(void)).ToList()
+                .Get_LastTestMetod().WriteThis().Get_Delegate_AS<System.Action>()()
+            ;
+        }
+        /// <summary> Запуск вообще всех тестов void. Предупреждение тест void может использовать пользовательский ввод и вывод</summary>
+        public static void Do_Oll()
+        {
+            System.Diagnostics.TestLast.Get_TestS()
+                .Where(a => a.p__Target_MethodInfo.ReturnParameter.ParameterType == typeof(void)).ToList()
+                .ForEach(a => a.Get_Delegate_AS<System.Action>()())
             ;
         }
         //Пример того, как тестовые функции запускались ранее
