@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="01_System\Diagnostics\Const.cs" />
+    <Compile Include="01_System\Diagnostics\TestLast.cs" />
     <Compile Include="01_System\Diagnostics\TestLastMethod.cs" />
     <Compile Include="01_System\Diagnostics\StackTracer.cs" />
     <Compile Include="01_System\Diagnostics\Ext_Stopwatch.cs" />
