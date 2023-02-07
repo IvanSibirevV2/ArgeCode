@@ -17,11 +17,9 @@ namespace System.Diagnostics
     {
         public static TestLastMethod Get_LastTestMetod(this List<TestLastMethod> _TestLastMethodS)
         { return _TestLastMethodS.Get(a => a.Select(b => b.p_DateTime).Max().Get(_Max => a.Where(b => b.p_DateTime == _Max))).First(); }
-        public static List<TestLastMethod> Get_wewe(this List<TestLastMethod> _List_TestLastMethod)
-        { 
-            return _List_TestLastMethod.Where(a => a.p__Target_MethodInfo.ReturnParameter.ParameterType == typeof(System.Boolean)).ToList()
-
-
+        public static List<TestLastMethod> Get_BoolTest(this List<TestLastMethod> _List_TestLastMethod)
+        {
+            return _List_TestLastMethod.Where(a => a.p__Target_MethodInfo.ReturnParameter.ParameterType == typeof(System.Boolean)).ToList();
         }
 
     }
@@ -59,16 +57,14 @@ namespace System.Diagnostics
         /// <summary> Запуск последнего тестового метода, возвращающего System.Boolean </summary>
         public static System.Boolean Do_IfBoolean()
         {
-            return System.Diagnostics.TestLast.Get_TestS()
-                .Where(a => a.p__Target_MethodInfo.ReturnParameter.ParameterType == typeof(System.Boolean)).ToList()
+            return System.Diagnostics.TestLast.Get_TestS().Get_BoolTest()
                 .Get_LastTestMetod().WriteThis().Get_Delegate_AS<System.Func<System.Boolean>>()()
             ;
         }
         /// <summary> Запуск вообще всех тестов bool. Предупреждение тест bool не может использовать пользовательский ввод и вывод</summary>
         public static System.Boolean Do_IfBoolean_Oll()
         {
-            return System.Diagnostics.TestLast.Get_TestS()
-                .Where(a => a.p__Target_MethodInfo.ReturnParameter.ParameterType == typeof(System.Boolean)).ToList()
+            return System.Diagnostics.TestLast.Get_TestS().Get_BoolTest()
                 .Select(a => a.Get_Delegate_AS<System.Func<System.Boolean>>()()).Aggregate((a, b) => a & b)
             ;
         }
