@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>ArgeCode</id>
-    <version>0.0.5</version>
+    <version>0.0.6</version>
     <authors>SibirevIvanV2</authors>
     <description>C# FullFireSyntacticExtension ToFunc-Programming</description>
 	<projectUrl>https://github.com/IvanSibirevV2/ArgeCode.git</projectUrl>
@@ -37,5 +37,7 @@ net48 - support
 
     <file src="Net48/ArgeCode.dll" target="lib\Net48" />
     <file src="Net48/ArgeCode.pdb" target="lib\Net48" />
+	
+	<file src="ArgeCode.bat" target=".\" />
   </files>
 </package>
