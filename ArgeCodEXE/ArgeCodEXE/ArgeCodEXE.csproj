@@ -50,5 +50,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ArgeCode\ArgeCode.csproj">
+      <Project>{f66b87c7-8aae-4149-9b5d-81f79f0036de}</Project>
+      <Name>ArgeCode</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

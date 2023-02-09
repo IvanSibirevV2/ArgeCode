@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgeCode_Net46", "ArgeCode_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgeCode_Net46_EXE", "ArgeCode_Net46_EXE\ArgeCode_Net46_EXE.csproj", "{ECE5AA6F-4DB4-416B-BFF4-D4BE210C91E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgeCode", "ArgeCode\ArgeCode.csproj", "{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{ECE5AA6F-4DB4-416B-BFF4-D4BE210C91E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECE5AA6F-4DB4-416B-BFF4-D4BE210C91E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECE5AA6F-4DB4-416B-BFF4-D4BE210C91E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
