@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>ArgeCode</id>
-    <version>0.0.4</version>
+    <version>0.0.5</version>
     <authors>SibirevIvanV2</authors>
     <description>C# FullFireSyntacticExtension ToFunc-Programming</description>
 	<projectUrl>https://github.com/IvanSibirevV2/ArgeCode.git</projectUrl>
@@ -11,17 +11,31 @@
 0.0.4 Only .net 45 and later
 0.0.3 Only Core 3.1 and later
 there is no reason to support Core because there is no stability
+net45 - old version
+net46 - support
+net47 - support
+net48 - support
 </releaseNotes>
     <tags>C# TestLast Unit Tests Generic System Extension Reflection Functional Paradigm Func ArgeCode</tags>
     <dependencies>
-      <group targetFramework="net45">
-        <!--<dependency id="SampleDependency" version="1.0.0" />-->
-      </group>
+      <group targetFramework="net45"></group>
+      <group targetFramework="net46"></group>
+      <group targetFramework="net47"></group>
+      <group targetFramework="net48"></group>
     </dependencies>
   </metadata>
   <files>
     <file src=".\ArgeFire.png" target="" />
-    <file src="../../../ArgeCode_Net45/bin/Debug/ArgeCode_Net45.dll" target="lib\net45" />
-    <file src="../../../ArgeCode_Net45/bin/Debug/ArgeCode_Net45.pdb" target="lib\net45" />
+    <file src="Net45/ArgeCode_Net45.dll" target="lib\Net45" />
+    <file src="Net45/ArgeCode_Net45.pdb" target="lib\Net45" />
+
+    <file src="Net46/ArgeCode.dll" target="lib\Net46" />
+    <file src="Net46/ArgeCode.pdb" target="lib\Net46" />
+
+    <file src="Net47/ArgeCode.dll" target="lib\Net47" />
+    <file src="Net47/ArgeCode.pdb" target="lib\Net47" />
+
+    <file src="Net48/ArgeCode.dll" target="lib\Net48" />
+    <file src="Net48/ArgeCode.pdb" target="lib\Net48" />
   </files>
 </package>
