@@ -30,7 +30,7 @@ namespace System.CodeGearER
             return _CompilerResults.CompiledAssembly;
         }
         [System.Diagnostics.TestLastMethod(_year: 2021, _month: 12, _day: 10, _hour: 22, _minute: 26, _second: 0, _millisecond: 0, _StrComment: "Тест компиляции и исполнения кода из текста")]
-        public static void Test()
+        public static bool Test()
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();
             System.String _NameSpace = "Space_" + System.DateTime.Now.ToString("yyyyMMdd_ssmmhh_ffffff");
@@ -63,6 +63,7 @@ namespace " + _NameSpace + @"
                 .Cast_As<System.Action>()
             ()
             ;
+            return true;
         }
     }
 }

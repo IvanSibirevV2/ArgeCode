@@ -18,8 +18,9 @@ namespace System.Diagnostics
         public static TestLastMethod Get_LastTestMetod(this List<TestLastMethod> _TestLastMethodS)
         {return _TestLastMethodS.Select(b => b.p_DateTime).Max().Get(_Max => _TestLastMethodS.Where(b => b.p_DateTime == _Max)).First(); }
         public static List<TestLastMethod> Where_BoolTest(this List<TestLastMethod> _List_TestLastMethod)
-        {return _List_TestLastMethod.Where(a => a.p__Target_MethodInfo.ReturnParameter.ParameterType == typeof(System.Boolean)).ToList();}
-
+        {return _List_TestLastMethod.Where(a => a.p__Target_MethodInfo.ReturnParameter.ParameterType == typeof(System.Boolean)).ToList(); }
+        public static List<TestLastMethod> Where_VoidTest(this List<TestLastMethod> _List_TestLastMethod)
+        {return _List_TestLastMethod.Where(a => a.p__Target_MethodInfo.ReturnParameter.ParameterType == typeof(void)).ToList();}
     }
     /// <summary>
     /// Продвинутый инструмент запуска тестовых функций.
@@ -54,34 +55,22 @@ namespace System.Diagnostics
         
         /// <summary> Запуск последнего тестового метода, возвращающего System.Boolean </summary>
         public static System.Boolean Do_IfBoolean()
-        {
-            return System.Diagnostics.TestLast.Get_TestS().Where_BoolTest()
-                .Get_LastTestMetod().WriteThis().Get_Delegate_AS<System.Func<System.Boolean>>()()
-            ;
-        }
+        {return System.Diagnostics.TestLast.Get_TestS().Where_BoolTest().Get_LastTestMetod().WriteThis().Get_Delegate_AS<System.Func<System.Boolean>>()();}
         /// <summary> Запуск вообще всех тестов bool. Предупреждение тест bool не может использовать пользовательский ввод и вывод</summary>
         public static System.Boolean Do_IfBoolean_Oll()
-        {
-            return System.Diagnostics.TestLast.Get_TestS().Where_BoolTest()
-                .Select(a => a.Get_Delegate_AS<System.Func<System.Boolean>>()()).Aggregate((a, b) => a & b)
-            ;
-        }
+        {return System.Diagnostics.TestLast.Get_TestS().Where_BoolTest().Select(a => a.Get_Delegate_AS<System.Func<System.Boolean>>()()).Aggregate((a, b) => a & b);}
         /// <summary> Запуск последнего тестового метода, возвращающего System.Boolean </summary>
-        public static void Do()
-        {
-            System.Diagnostics.TestLast.Get_TestS()
-                .Where(a => a.p__Target_MethodInfo.ReturnParameter.ParameterType == typeof(void)).ToList()
-                .Get_LastTestMetod().WriteThis().Get_Delegate_AS<System.Action>()()
-            ;
-        }
+        public static void Do_IfVoid(){System.Diagnostics.TestLast.Get_TestS().Where_VoidTest().Get_LastTestMetod().WriteThis().Get_Delegate_AS<System.Action>()();}
         /// <summary> Запуск вообще всех тестов void. Предупреждение тест void может использовать пользовательский ввод и вывод</summary>
-        public static void Do_Oll()
-        {
-            System.Diagnostics.TestLast.Get_TestS()
-                .Where(a => a.p__Target_MethodInfo.ReturnParameter.ParameterType == typeof(void)).ToList()
-                .ForEach(a => a.Get_Delegate_AS<System.Action>()())
-            ;
-        }
+        public static void Do_IfVoid_Oll()
+        {System.Diagnostics.TestLast.Get_TestS().Where_VoidTest().ForEach(a => a.Get_Delegate_AS<System.Action>()());}
+        /// <summary> Запуск последнего тестового метода, возвращающего System.Boolean </summary>
+        public static System.Boolean Do()
+        { return System.Diagnostics.TestLast.Get_TestS().Where_BoolTest().Get_LastTestMetod().WriteThis().Get_Delegate_AS<System.Func<System.Boolean>>()(); }
+        /// <summary> Запуск вообще всех тестов bool. Предупреждение тест bool не может использовать пользовательский ввод и вывод</summary>
+        public static System.Boolean Do_Oll()
+        { return System.Diagnostics.TestLast.Get_TestS().Where_BoolTest().Select(a => a.Get_Delegate_AS<System.Func<System.Boolean>>()()).Aggregate((a, b) => a & b); }
+
         //Пример того, как тестовые функции запускались ранее
         /// <summary>System.Diagnostics.TestMode.Test();</summary>
         public static void Test()
@@ -91,20 +80,13 @@ namespace System.Diagnostics
         }
         //Пример того, как тестовые функции можно мапить сейчас
         [System.Diagnostics.TestLastMethod(_year: 2023, _month: 2, _day: 2, _hour: 18, _minute: 23, _second: 0, _millisecond: 0, _StrComment: "Тест №0. Мапинг тестовых функций ")]
-        public static void Test_0()
-        {
-            System.Console.WriteLine(System.Diagnostics.StackTracer.Get_STS());
-        }
+        public static bool Test_0()
+        {System.Console.WriteLine(System.Diagnostics.StackTracer.Get_STS()); return true; }
         [System.Diagnostics.TestLastMethod(_year: 2023, _month: 2, _day: 2, _hour: 18, _minute: 23, _second: 1, _millisecond: 0, _StrComment: "Тест №0. Мапинг тестовых функций ")]
         public static System.Boolean Test_0XT78587GF874444G()
-        {
-            System.Console.WriteLine(System.Diagnostics.StackTracer.Get_STS());
-            return (System.Boolean)true;
-        }
+        {System.Console.WriteLine(System.Diagnostics.StackTracer.Get_STS());return true;}
         [System.Diagnostics.TestLastMethod(_year: 2021, _month: 11, _day: 17, _hour: 15, _minute: 06, _second: 0, _millisecond: 0, _StrComment: "Тест №2. Мапинг тестовых функций ")]
-        public static void Test_1()
-        {
-            System.Console.WriteLine(System.Diagnostics.StackTracer.Get_STS());
-        }
+        public static bool Test_1()
+        {System.Console.WriteLine(System.Diagnostics.StackTracer.Get_STS());return true;}
     }
 }

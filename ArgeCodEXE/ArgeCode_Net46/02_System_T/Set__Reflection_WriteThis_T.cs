@@ -184,10 +184,11 @@ namespace System
             return _this;
         }
         [System.Diagnostics.TestLastMethod(_year: 2021, _month: 11, _day: 28, _hour: 12, _minute: 47, _second: 0, _millisecond: 0)]
-        public static void Test()
+        public static bool Test()
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();
             (new System.Set__Reflection_WriteThis_T.ClassForTest()).Set__Reflection_WriteThis();
+            return  true;
         }
         /////////////////////////////////////////////////////////////////////////////////
         private class TestAtt : System.Attribute

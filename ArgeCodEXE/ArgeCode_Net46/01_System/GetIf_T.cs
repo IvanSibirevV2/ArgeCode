@@ -36,7 +36,7 @@
             return _fail(_this);
         }
         /// <summary>Пример с использованием</summary>
-        public static void Test()
+        public static bool Test()
         {
             {
                 System.Boolean _Boolean = true;
@@ -50,6 +50,7 @@
             //Актуальность:
             //Данная функция - гибрид .Get(a =>...) и .SetIf<T>(_Bool:...,_f1:...,_f0:...,_fBool:...)
             //и аргонично заполняет бреш в функциональных программных кодах.
+            return true
         }
     }
 }

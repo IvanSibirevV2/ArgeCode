@@ -22,14 +22,13 @@
         {
             public System.Int32 p_Int32 = 6;
             public System.String p_String = "Привет мир";
-
             public override string ToString() => "<" + this.p_Int32 + "><" + p_String + ">";
         }
         /// <summary>
         ///Пример использования:
         ///System.Set_T.Test();
         /// </summary>
-        public static void Test()
+        public static bool Test()
         {
 
             (new LocalClassForTest())
@@ -113,6 +112,7 @@
             //Последний довод.
             //Вспомним про LinQ!!! 
             //Опыт изучения нашей библиотеки и знание LinQ гармонично дополнят друг друга. В C#, как в функциональном языке почти не останется ощутимых синтаксических пробелов.
+            return true;
         }
     }
 }

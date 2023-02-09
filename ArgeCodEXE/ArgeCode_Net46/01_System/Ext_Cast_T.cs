@@ -18,7 +18,7 @@
         /// <summary>Возвращает обертку обертку конкретного типа как объект</summary>
         public static System.Object Cast_AsObj<T>(this T _this) => (System.Object)_this;
         /// <summary>Пример использования</summary>
-        public static void Test()
+        public static bool Test()
         {
             "Привет мир".Cast_As<System.Object>();
             //Равносильно
@@ -34,6 +34,7 @@
             //И дея позаимствована из LinQ_To_Object (только списки)
             // и распространена на все остальные случаи.
             // Расширяем граници применимости...
+            return true;
         }
     }
 }

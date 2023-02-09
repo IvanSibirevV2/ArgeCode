@@ -47,7 +47,7 @@
         /// Консольные тесты пишутся так что при запуске модульных тестов можно перенаправить вывод в лог файлы
         /// System.Diagnostics.StackTracer.Test();
         /// </summary>
-        public static void Test()
+        public static bool Test()
         {
             System.Console.WriteLine("Component.StackTracer Class");
             System.Console.WriteLine("Вот весь стек");
@@ -56,6 +56,7 @@
             System.Console.WriteLine((new StackTracer()).Get_STSS());
             System.Console.WriteLine("");
             System.Console.WriteLine(System.Diagnostics.StackTracer.Get_STS());
+            return true;
         }
     }
 }

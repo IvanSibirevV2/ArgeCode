@@ -43,7 +43,7 @@
         /// <summary>
         /// Пример использования:
         /// </summary>
-        public static void Test()
+        public static bool Test()
         {
             {
                 System.Boolean _Boolean = true;
@@ -76,6 +76,7 @@
             for (int i = 0; i < 100; i++) ;
             foreach (var qwe in (new string[] { "1", "2", "3" })) ;
             //
+            return true;
         }
     }
 }

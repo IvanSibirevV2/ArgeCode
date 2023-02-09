@@ -97,11 +97,12 @@ namespace System.VConsole
 
         /// <summary>System.VConsole.Ext_T_ReadLine.Test_ReadLine();</summary>
         [System.Diagnostics.TestLastMethod(_year: 2021, _month: 12, _day: 02, _hour: 14, _minute: 31, _second: 0, _millisecond: 0)]
-        public static void Test_ReadLine()
+        public static bool Test_ReadLine()
         {
             false.ToString().WriteLine();
             (new classForTest()).Get__ReadLine();
             //false.ReadLine().ToString().WriteLine();
+            return true;
         }
     }
     ///////////////////////////////////////////   

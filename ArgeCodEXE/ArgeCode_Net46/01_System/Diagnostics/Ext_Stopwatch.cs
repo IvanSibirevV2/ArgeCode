@@ -20,7 +20,7 @@ namespace System.Diagnostics
         public static System.Diagnostics.Stopwatch Stop_(this System.Diagnostics.Stopwatch _this) { _this.Stop(); return _this; }
 
         [System.Diagnostics.TestLastMethod(_year: 2020, _month: 07, _day: 27, _hour: 18, _minute: 04, _second: 0, _millisecond: 0)]
-        public static void Test_Ext_Stopwatch_20200727_18_03()
+        public static bool Test_Ext_Stopwatch_20200727_18_03()
         {
             System.Console.WriteLine(System.Diagnostics.StackTracer.Get_STS());
             (new System.Diagnostics.Stopwatch())
@@ -33,6 +33,7 @@ namespace System.Diagnostics
                     a.Elapsed.ToString().WriteLine()
                 )
             ;
+            return true;
         }
     }
 }

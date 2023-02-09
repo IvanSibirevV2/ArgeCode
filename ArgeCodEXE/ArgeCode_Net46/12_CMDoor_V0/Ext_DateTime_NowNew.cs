@@ -21,12 +21,13 @@ namespace System
         }
         //////////////////////////////////////////////////////
         [System.Diagnostics.TestLastMethod(_year: 2020, _month: 10, _day: 07, _hour: 11, _minute: 35, _second: 0, _millisecond: 1, _StrComment: "Тест Вывода даты времени в определенном формате")]
-        public static void Test()
+        public static bool Test()
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();
             for (int i = 0; i < 100; i++)
                 System.DateTime.Now.NowNew().ToString("yyyyMMdd_hhmmss_ffff-").WriteLine()
             ;
+            return true;
         }
     }
 }
