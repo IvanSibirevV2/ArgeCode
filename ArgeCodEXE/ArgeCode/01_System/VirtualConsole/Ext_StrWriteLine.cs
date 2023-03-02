@@ -16,5 +16,8 @@ namespace System
         { _StringS.ForEach(a => a.WriteLine()); return _StringS; }
         public static System.String ReadLine(this System.String _String)
         { return System.VConsole.Config.p_VirtualConsole.ReadLine(); }
+        public static System.String Add(this System.String _String, System.String _Str)
+        { return _String+_Str; }
+
     }
 }
