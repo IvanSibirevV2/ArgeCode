@@ -51,8 +51,9 @@
     <Compile Include="01_System\Diagnostics\StackTracer.cs" />
     <Compile Include="01_System\Diagnostics\TestLast.cs" />
     <Compile Include="01_System\Diagnostics\TestLastMethod.cs" />
-    <Compile Include="01_System\Ext_Cast_T.cs" />
-    <Compile Include="01_System\Ext_List_T.cs" />
+    <Compile Include="01_System\Ext\Ext_Cast_T.cs" />
+    <Compile Include="01_System\Ext\Ext_List_T.cs" />
+    <Compile Include="01_System\Ext\Ext_String.cs" />
     <Compile Include="01_System\GetIf_T.cs" />
     <Compile Include="01_System\Get_T.cs" />
     <Compile Include="01_System\INewEable.cs" />
