@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>ArgeCode</id>
-    <version>0.0.9</version>
+    <version>0.0.10</version>
     <authors>SibirevIvanV2</authors>
     <description>C# FullFireSyntacticExtension ToFunc-Programming</description>
 	<projectUrl>https://github.com/IvanSibirevV2/ArgeCode.git</projectUrl>
@@ -15,10 +15,10 @@ net45 - old version
 net46 - support
 net47 - support
 net48 - support
++.ifNull;+.ifNotNull;+.if0;+.if1;
 </releaseNotes>
     <tags>C# TestLast Unit Tests Generic System Extension Reflection Functional Paradigm Func ArgeCode</tags>
     <dependencies>
-      <group targetFramework="net45"></group>
       <group targetFramework="net46"></group>
       <group targetFramework="net47"></group>
       <group targetFramework="net48"></group>
@@ -26,9 +26,6 @@ net48 - support
   </metadata>
   <files>
     <file src=".\ArgeFire.png" target="" />
-    <file src="Net45/ArgeCode_Net45.dll" target="lib\Net45" />
-    <file src="Net45/ArgeCode_Net45.pdb" target="lib\Net45" />
-
     <file src="Net46/ArgeCode.dll" target="lib\Net46" />
     <file src="Net46/ArgeCode.pdb" target="lib\Net46" />
 

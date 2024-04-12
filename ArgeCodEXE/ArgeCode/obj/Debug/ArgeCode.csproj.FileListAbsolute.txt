@@ -4,3 +4,9 @@ C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\ArgeCode.csproj.AssemblyRefe
 C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\ArgeCode.csproj.CoreCompileInputs.cache
 C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\ArgeCode.dll
 C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\ArgeCode.pdb
+C:\D\GitHub\GitHubOll\ArgeCode\ArgeCodEXE\ArgeCode\bin\Debug\ArgeCode.dll
+C:\D\GitHub\GitHubOll\ArgeCode\ArgeCodEXE\ArgeCode\bin\Debug\ArgeCode.pdb
+C:\D\GitHub\GitHubOll\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\ArgeCode.csproj.AssemblyReference.cache
+C:\D\GitHub\GitHubOll\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\ArgeCode.csproj.CoreCompileInputs.cache
+C:\D\GitHub\GitHubOll\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\ArgeCode.dll
+C:\D\GitHub\GitHubOll\ArgeCode\ArgeCodEXE\ArgeCode\obj\Debug\ArgeCode.pdb

@@ -9,3 +9,13 @@ C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCodEXE\bin\Debug\ArgeCode.pdb
 C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCodEXE\obj\Debug\ArgeCodEXE.csproj.CopyComplete
 C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCodEXE\obj\Debug\ArgeCodEXE.exe
 C:\D\Git_Hub\ArgeCode\ArgeCodEXE\ArgeCodEXE\obj\Debug\ArgeCodEXE.pdb
+C:\D\GitHub\GitHubOll\ArgeCode\ArgeCodEXE\ArgeCodEXE\bin\Debug\ArgeCodEXE.exe.config
+C:\D\GitHub\GitHubOll\ArgeCode\ArgeCodEXE\ArgeCodEXE\bin\Debug\ArgeCodEXE.exe
+C:\D\GitHub\GitHubOll\ArgeCode\ArgeCodEXE\ArgeCodEXE\bin\Debug\ArgeCodEXE.pdb
+C:\D\GitHub\GitHubOll\ArgeCode\ArgeCodEXE\ArgeCodEXE\bin\Debug\ArgeCode.dll
+C:\D\GitHub\GitHubOll\ArgeCode\ArgeCodEXE\ArgeCodEXE\bin\Debug\ArgeCode.pdb
+C:\D\GitHub\GitHubOll\ArgeCode\ArgeCodEXE\ArgeCodEXE\obj\Debug\ArgeCodEXE.csproj.AssemblyReference.cache
+C:\D\GitHub\GitHubOll\ArgeCode\ArgeCodEXE\ArgeCodEXE\obj\Debug\ArgeCodEXE.csproj.CoreCompileInputs.cache
+C:\D\GitHub\GitHubOll\ArgeCode\ArgeCodEXE\ArgeCodEXE\obj\Debug\ArgeCodEXE.exe
+C:\D\GitHub\GitHubOll\ArgeCode\ArgeCodEXE\ArgeCodEXE\obj\Debug\ArgeCodEXE.pdb
+C:\D\GitHub\GitHubOll\ArgeCode\ArgeCodEXE\ArgeCodEXE\obj\Debug\ArgeCodEXE.csproj.Up2Date
