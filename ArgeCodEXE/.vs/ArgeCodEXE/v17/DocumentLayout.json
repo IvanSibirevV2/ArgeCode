@@ -3,31 +3,8 @@
   "WorkspaceRootPath": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ArgeCode||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\01_system\\setif_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\01_system\\setif_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\01_system\\set_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\01_system\\set_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\02_system_t\\if_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\02_system_t\\if_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\02_system_t\\get__copy_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\02_system_t\\get__copy_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\02_system_t\\get__new_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\02_system_t\\get__new_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\01_system\\ext\\ext_string.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\01_system\\ext\\ext_string.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\01_system\\virtualconsole\\ext_strwriteline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -36,6 +13,29 @@
     {
       "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\01_system\\virtualconsole\\virtualconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\01_system\\virtualconsole\\virtualconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\01_system\\setif_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\01_system\\setif_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\02_system_t\\if_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\02_system_t\\if_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\01_system\\set_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\01_system\\set_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ArgeCode||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\02_system_t\\get__new_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\02_system_t\\get__new_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\01_system\\ext\\ext_string.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\01_system\\ext\\ext_string.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|c:\\d\\github\\githuboll\\argecode\\argecodexe\\argecode\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
@@ -48,11 +48,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "ArgeCode",
               "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\ArgeCode.csproj",
               "RelativeDocumentMoniker": "ArgeCode\\ArgeCode.csproj",
@@ -64,55 +64,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Get__Copy_T.cs",
               "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\02_System_T\\Get__Copy_T.cs",
               "RelativeDocumentMoniker": "ArgeCode\\02_System_T\\Get__Copy_T.cs",
               "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\02_System_T\\Get__Copy_T.cs",
               "RelativeToolTip": "ArgeCode\\02_System_T\\Get__Copy_T.cs",
-              "ViewState": "AQIAAFYAAADAHR73s0QwwGcAAAABAAAA",
+              "ViewState": "AQIAAEoAAAAAAAAAAADwv2IAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T17:04:02.13Z"
+              "WhenOpened": "2024-04-12T17:04:02.13Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "if_T.cs",
               "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\02_System_T\\if_T.cs",
               "RelativeDocumentMoniker": "ArgeCode\\02_System_T\\if_T.cs",
               "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\02_System_T\\if_T.cs",
               "RelativeToolTip": "ArgeCode\\02_System_T\\if_T.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
+              "ViewState": "AQIAAA0AAADgvffe8yEnwCEAAABdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T17:03:19.641Z"
+              "WhenOpened": "2024-04-12T17:03:19.641Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Set_T.cs",
               "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\01_System\\Set_T.cs",
               "RelativeDocumentMoniker": "ArgeCode\\01_System\\Set_T.cs",
               "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\01_System\\Set_T.cs",
               "RelativeToolTip": "ArgeCode\\01_System\\Set_T.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAASAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAADwvysAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T17:02:40.965Z"
+              "WhenOpened": "2024-04-12T17:02:40.965Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SetIf_T.cs",
               "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\01_System\\SetIf_T.cs",
               "RelativeDocumentMoniker": "ArgeCode\\01_System\\SetIf_T.cs",
               "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\01_System\\SetIf_T.cs",
               "RelativeToolTip": "ArgeCode\\01_System\\SetIf_T.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAgwFEAAAABAAAA",
+              "ViewState": "AQIAADsAAADoQQhRGc0owDEAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T07:19:15.595Z"
+              "WhenOpened": "2024-04-12T07:19:15.595Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "Ext_StrWriteLine.cs",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\01_System\\VirtualConsole\\Ext_StrWriteLine.cs",
+              "RelativeDocumentMoniker": "ArgeCode\\01_System\\VirtualConsole\\Ext_StrWriteLine.cs",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\01_System\\VirtualConsole\\Ext_StrWriteLine.cs",
+              "RelativeToolTip": "ArgeCode\\01_System\\VirtualConsole\\Ext_StrWriteLine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T07:19:02.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VirtualConsole.cs",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\01_System\\VirtualConsole\\VirtualConsole.cs",
+              "RelativeDocumentMoniker": "ArgeCode\\01_System\\VirtualConsole\\VirtualConsole.cs",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\01_System\\VirtualConsole\\VirtualConsole.cs",
+              "RelativeToolTip": "ArgeCode\\01_System\\VirtualConsole\\VirtualConsole.cs",
+              "ViewState": "AQIAAAYAAACA7733Ph4dwBcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T07:19:02.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Get__New_T.cs",
               "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\02_System_T\\Get__New_T.cs",
               "RelativeDocumentMoniker": "ArgeCode\\02_System_T\\Get__New_T.cs",
@@ -124,19 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Ext_StrWriteLine.cs",
-              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\01_System\\VirtualConsole\\Ext_StrWriteLine.cs",
-              "RelativeDocumentMoniker": "ArgeCode\\01_System\\VirtualConsole\\Ext_StrWriteLine.cs",
-              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\01_System\\VirtualConsole\\Ext_StrWriteLine.cs",
-              "RelativeToolTip": "ArgeCode\\01_System\\VirtualConsole\\Ext_StrWriteLine.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T07:19:02.204Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Ext_String.cs",
               "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\01_System\\Ext\\Ext_String.cs",
               "RelativeDocumentMoniker": "ArgeCode\\01_System\\Ext\\Ext_String.cs",
@@ -145,18 +163,6 @@
               "ViewState": "AQIAAAEAAAAAAAAAAAAqwBUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T07:19:02.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VirtualConsole.cs",
-              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\01_System\\VirtualConsole\\VirtualConsole.cs",
-              "RelativeDocumentMoniker": "ArgeCode\\01_System\\VirtualConsole\\VirtualConsole.cs",
-              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\01_System\\VirtualConsole\\VirtualConsole.cs",
-              "RelativeToolTip": "ArgeCode\\01_System\\VirtualConsole\\VirtualConsole.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAABcAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T07:19:02.21Z"
             }
           ]
         }
