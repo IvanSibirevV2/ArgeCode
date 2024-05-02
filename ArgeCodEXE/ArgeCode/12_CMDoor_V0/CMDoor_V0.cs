@@ -24,6 +24,7 @@ namespace System.CMD
     /// </summary>
     public static class CMDoor_V0
     {
+        public static System.String Execute_CMDoor_V0(this string _this){ return Get_Resalt(_this);}
         /// <summary>Дверь из CSharp в CMD</summary>
         /// <param name="_CMDInPutSkript">Текст скрипта программных кодов</param>
         /// <param name="_Encoding">Дверь для кодировкиЕсли возникнут проблемы.</param>
