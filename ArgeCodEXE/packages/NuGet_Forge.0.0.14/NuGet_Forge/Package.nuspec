@@ -2,20 +2,51 @@
 <package >
   <metadata>
     <id>ArgeCode</id>
-    <version>0.0.11</version>
+    <version>0.0.12</version>
     <authors>SibirevIvanV2</authors>
     <description>C# FullFireSyntacticExtension ToFunc-Programming</description>
 	<projectUrl>https://github.com/IvanSibirevV2/ArgeCode.git</projectUrl>
      <icon>ArgeFire.png</icon>    
 <releaseNotes>
-0.0.4 Only .net 45 and later
-0.0.3 Only Core 3.1 and later
-there is no reason to support Core because there is no stability
-net45 - old version
 net46 - support
 net47 - support
 net48 - support
-+.ifNull;+.ifNotNull;+.if0;+.if1;
++"".CMDoor_Run();
+
+using System.CMD;
+
+""
+    .echo_off()
+    .echo("NoComands")
+    .echo("echo Привет мир!!!")
+    .echo_()
+.CMDoor_Run();
+
+""//Как видите, таймер не рааботает
+    .echo_off()
+    .echo("Ждем 2 секунды")
+    .Add("TIMEOUT /T 3").NR()
+    .echo("Все ок")
+.CMDoor_Run();
+
+""//Как видите, пауза  стопорит, если не послать текст
+    .echo_off()
+    .echo("пауза")
+    .Add("pause").NR()
+    .Add("pause").NR()
+    .echo("Все ок")
+.CMDoor_Run("");
+
+""//Как видите, пауза  стопорит, если не послать текст
+    .echo_off()
+    .echo("HelloWorld>>Text.txt")
+    .echo("Привет_мир>>Text.txt")
+    .echo("Закройте без сохранения и программа будет работать дальше>>Text.txt")
+    .notepad("Text.txt")
+    .del("Text.txt")
+    .echo("Привет мир")
+    .CMDoor_Run();
+
 </releaseNotes>
     <tags>C# TestLast Unit Tests Generic System Extension Reflection Functional Paradigm Func ArgeCode</tags>
     <dependencies>
