@@ -22,21 +22,15 @@ namespace System.CMD
     /// 
     /// Если в нутри запускаете открытие файлов через блокнот, то дочерн
     /// </summary>
-    public static class CMDoor_V0
+    public static class CMDoor
     {
-        public static System.String Execute_CMDoor_V0(this string _this){ return Get_Resalt(_this);}
+        public static System.String CMDoor_Run(this string _this){ return Get_Resalt(_this);}
         /// <summary>Дверь из CSharp в CMD</summary>
         /// <param name="_CMDInPutSkript">Текст скрипта программных кодов</param>
         /// <param name="_Encoding">Дверь для кодировкиЕсли возникнут проблемы.</param>
         /// <returns>Результат выполнения скрипта для парсинга ответа на команду</returns>
         public static System.String Get_Resalt(
-            System.String _CMDInPutSkript =
-@"
-echo off
-echo NoComands
-echo Привет мир
-::TIMEOUT /T 10
-"
+            System.String _CMDInPutSkript
             , System.Text.Encoding _Encoding = null
         )
         {
@@ -71,12 +65,18 @@ echo Привет мир
             return _Resalt;
         }
         //////////////////////////////////////////////////////
-        [System.Diagnostics.TestLastMethod(_year: 2020, _month: 08, _day: 05, _hour: 0, _minute: 59, _second: 0, _millisecond: 0, _StrComment: "Тест №0 System.CMD.CMDoor_V0")]
+        [System.Diagnostics.TestLastMethod(_year: 2024, _month: 05, _day: 03, _hour: 09, _minute: 03, _second: 0, _millisecond: 0, _StrComment: "Тест №0 System.CMD.CMDoor_V0")]
         public static bool Test()
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();
             ">>>:System.CMD.CMDoor_V0.Test():>>>".WriteLine();
-            System.CMD.CMDoor_V0.Get_Resalt().WriteLine();
+            @"
+echo off
+echo NoComands
+echo Привет мир
+::TIMEOUT /T 10
+".CMDoor_Run().WriteLine();
+            //System.CMD.CMDoor.Get_Resalt().WriteLine();
             "<<<:System.CMD.CMDoor_V0.Test():<<<".WriteLine();
             return true;
         }
@@ -86,7 +86,7 @@ echo Привет мир
         {
             System.Diagnostics.StackTracer.Get_STS().WriteLine();
             ">>>:System.CMD.CMDoor_V0.Test_2():>>>".WriteLine();
-            System.CMD.CMDoor_V0.Get_Resalt(_CMDInPutSkript:
+            System.CMD.CMDoor.Get_Resalt(_CMDInPutSkript:
 @"@echo off
 echo HelloWorld>>Text.txt
 echo Привет_мир>>Text.txt

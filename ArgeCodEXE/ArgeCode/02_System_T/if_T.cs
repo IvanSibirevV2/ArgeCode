@@ -10,7 +10,7 @@ namespace System
     {
         public static T ifNull<T>(this T _this, System.Action<T> a) {if (_this == null) a(_this);return _this;}
         public static T ifNotNull<T>(this T _this, System.Action<T> a){ if (_this != null) a(_this); return _this; }
-        [System.Diagnostics.TestLastMethod(_year: 2024, _month: 12, _day: 04, _hour: 20, _minute: 09, _second: 0, _millisecond: 0)]
+        [System.Diagnostics.TestLastMethod(_year: 2024, _month: 04, _day: 04, _hour: 20, _minute: 09, _second: 0, _millisecond: 0)]
         public static bool Test_ifNull()
         {
             System.Object _obj = null;
@@ -24,7 +24,7 @@ namespace System
         { if (!_this) _a(_this); return _this;}
         public static System.Boolean if1(this System.Boolean _this, System.Action<System.Boolean> _a)
         { if (_this) _a(_this); return _this; }
-        [System.Diagnostics.TestLastMethod(_year: 2024, _month: 12, _day: 04, _hour: 20, _minute: 09, _second: 1, _millisecond: 0)]
+        [System.Diagnostics.TestLastMethod(_year: 2024, _month: 04, _day: 04, _hour: 20, _minute: 09, _second: 1, _millisecond: 0)]
         public static bool Test_ifBool()
         {
             System.Boolean _flg = true;

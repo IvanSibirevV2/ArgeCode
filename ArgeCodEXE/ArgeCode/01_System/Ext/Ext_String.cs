@@ -18,5 +18,9 @@ namespace System
             }
             return _Str;
         }
+        public static System.String Add(this System.String _this, System.String _str)
+            => _this + _str;
+        public static System.String NR(this System.String _this)
+            => _this.Add("\r\n");
     }
 }
