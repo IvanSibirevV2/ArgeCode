@@ -74,6 +74,7 @@
     <Compile Include="04_CodeGearER\Ext_CodeGearER.cs" />
     <Compile Include="12_CMDoor\CMDoor.cs" />
     <Compile Include="12_CMDoor\Ext_DateTime_NowNew.cs" />
+    <Compile Include="12_CMDoor\NirCMDoor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
