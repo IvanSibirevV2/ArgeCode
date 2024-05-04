@@ -2,50 +2,20 @@
 <package >
   <metadata>
     <id>ArgeCode</id>
-    <version>0.0.12</version>
+    <version>0.0.13</version>
     <authors>SibirevIvanV2</authors>
-    <description>C# FullFireSyntacticExtension ToFunc-Programming</description>
+    <description>C# FullFireSyntacticExtension ToFunc-Programming TestFramework DataViewContract Maper DynamicCMD CMD NirCMD</description>
 	<projectUrl>https://github.com/IvanSibirevV2/ArgeCode.git</projectUrl>
      <icon>ArgeFire.png</icon>    
 <releaseNotes>
 net46 - support
 net47 - support
 net48 - support
-+"".CMDoor_Run();
+
++Ext_NirCMDoor;
 
 using System.CMD;
-
-""
-    .echo_off()
-    .echo("NoComands")
-    .echo("echo Привет мир!!!")
-    .echo_()
-.CMDoor_Run();
-
-""//Как видите, таймер не рааботает
-    .echo_off()
-    .echo("Ждем 2 секунды")
-    .Add("TIMEOUT /T 3").NR()
-    .echo("Все ок")
-.CMDoor_Run();
-
-""//Как видите, пауза  стопорит, если не послать текст
-    .echo_off()
-    .echo("пауза")
-    .Add("pause").NR()
-    .Add("pause").NR()
-    .echo("Все ок")
-.CMDoor_Run("");
-
-""//Как видите, пауза  стопорит, если не послать текст
-    .echo_off()
-    .echo("HelloWorld>>Text.txt")
-    .echo("Привет_мир>>Text.txt")
-    .echo("Закройте без сохранения и программа будет работать дальше>>Text.txt")
-    .notepad("Text.txt")
-    .del("Text.txt")
-    .echo("Привет мир")
-    .CMDoor_Run();
+using  System.CMD.NirCMD
 
 </releaseNotes>
     <tags>C# TestLast Unit Tests Generic System Extension Reflection Functional Paradigm Func ArgeCode</tags>

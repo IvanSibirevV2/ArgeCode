@@ -16,7 +16,7 @@ namespace System.CMD
     /// <summary>
     /// Дверь из CSharp в CMD
     /// </summary>
-    public static class CMDoor
+    public static class Ext_CMDoor
     {
         /// <summary>
         /// 

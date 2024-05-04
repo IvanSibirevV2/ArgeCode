@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ArgeCode</RootNamespace>
     <AssemblyName>ArgeCode</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
@@ -72,9 +72,9 @@
     <Compile Include="03_IMap\Att_MapLast.cs" />
     <Compile Include="03_IMap\IMap.cs" />
     <Compile Include="04_CodeGearER\Ext_CodeGearER.cs" />
-    <Compile Include="12_CMDoor\CMDoor.cs" />
+    <Compile Include="12_CMDoor\Ext_CMDoor.cs" />
     <Compile Include="12_CMDoor\Ext_DateTime_NowNew.cs" />
-    <Compile Include="12_CMDoor\NirCMDoor.cs" />
+    <Compile Include="12_CMDoor\Ext_NirCMDoor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
