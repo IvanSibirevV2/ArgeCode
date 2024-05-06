@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ArgeCode</RootNamespace>
     <AssemblyName>ArgeCode</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
@@ -72,13 +72,34 @@
     <Compile Include="03_IMap\Att_MapLast.cs" />
     <Compile Include="03_IMap\IMap.cs" />
     <Compile Include="04_CodeGearER\Ext_CodeGearER.cs" />
+    <Compile Include="12_CMDoor\Ext_Byte.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ext_Byte.tt</DependentUpon>
+    </Compile>
     <Compile Include="12_CMDoor\Ext_CMDoor.cs" />
     <Compile Include="12_CMDoor\Ext_DateTime_NowNew.cs" />
     <Compile Include="12_CMDoor\Ext_NirCMDoor.cs" />
+    <Compile Include="12_CMDoor\Ext_String_.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ext_String_.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="01_System\VirtualConsole\_ReadMe.txt" />
+    <Content Include="12_CMDoor\Ext_Byte.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Ext_Byte.cs</LastGenOutput>
+    </Content>
+    <Content Include="12_CMDoor\Ext_String_.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Ext_String_.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -11,5 +11,4 @@ del %NuGetPatch%ArgeCode.pdb
 copy ArgeCode.dll %NuGetPatch%ArgeCode.dll
 copy ArgeCode.pdb %NuGetPatch%ArgeCode.pdb
 cd NuGetPatch
-PAUSE
 exit /b

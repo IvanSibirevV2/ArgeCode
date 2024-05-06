@@ -1,0 +1,130 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace System.CMD.NirCMD
+{
+    public static class Ext_String_
+    {
+<# __("MousBtnLeft","0x01");
+__("MousBtnRight","0x02");
+__("MousBtnMiddle","0x04");
+__("Backspace","0x08");
+__("Tab","0x09");
+__("Enter","0x0D");
+__("Shift","0x10");
+__("Ctrl","0x11");
+__("Alt","0x12");
+__("Pause","0x13");
+__("CapsLock","0x14");
+__("Escape","0x1B");
+__("Space","0x20");
+__("PageUp","0x21");
+__("PageDown","0x22");
+__("End","0x23");
+__("Home","0x24");
+__("Insert","0x2D");
+__("Delete","0x2E");
+__("Win","0x5B");
+__("WinRight","0x5C");
+__("KeyApplication","0x5D");
+__("ScrollLock","0x91");
+__("PrintScreen","0x9A");
+__("СommaPoint","0xBA");
+__("EQUally","0xBB");
+__("Сomma","0xBC");
+__("Minus","0xBD");
+__("Dot","0xBE");
+__("Slash","0xBF");
+__("Tilda","0xC0");
+__("SqueaBraketBegin","0xDB");
+__("UnSlash","0xDC");
+__("SqueaBraketEnd","0xDD");
+__("MarkUno","0xDE");
+__("ArrowLeft","0x25");
+__("ArrowUp","0x26");
+__("ArrowRight","0x27");
+__("ArrowDown","0x28");
+__("_0","0x30");
+__("_1","0x31");
+__("_2","0x32");
+__("_3","0x33");
+__("_4","0x34");
+__("_5","0x35");
+__("_6","0x36");
+__("_7","0x37");
+__("_8","0x38");
+__("_9","0x39");
+__("A","0x41");
+__("B","0x42");
+__("C","0x43");
+__("D","0x44");
+__("E","0x45");
+__("F","0x46");
+__("G","0x47");
+__("H","0x48");
+__("I","0x49");
+__("J","0x4A");
+__("K","0x4B");
+__("L","0x4C");
+__("M","0x4D");
+__("N","0x4E");
+__("O","0x4F");
+__("P","0x50");
+__("Q","0x51");
+__("R","0x52");
+__("S","0x53");
+__("T","0x54");
+__("U","0x55");
+__("V","0x56");
+__("W","0x57");
+__("X","0x58");
+__("Y","0x59");
+__("Z","0x5A");
+__("NumPad0","0x60");
+__("NumPad1","0x61");
+__("NumPad2","0x62");
+__("NumPad3","0x63");
+__("NumPad4","0x64");
+__("NumPad5","0x65");
+__("NumPad6","0x66");
+__("NumPad7","0x67");
+__("NumPad8","0x68");
+__("NumPad9","0x69");
+__("NumPadStar","0x6A");
+__("NumPadPlas","0x6B");
+__("NumPadMinus","0x6D");
+__("NumPadDot","0x6E");
+__("NumPadSlash","0x6F");
+__("NumLock","0x90");
+__("F1","0x70");
+__("F2","0x71");
+__("F3","0x72");
+__("F4","0x73");
+__("F5","0x74");
+__("F6","0x75");
+__("F7","0x76");
+__("F8","0x77");
+__("F9","0x78");
+__("F10","0x79");
+__("F11","0x7A");
+__("F12","0x7A");
+#>
+    }
+}
+<#+
+private int __(string _str, string _byte)
+{
+#>public static string <#= _str #>(this string _this) => _this.Add("nircmd sendkeypress ").Add(0.<#= _str #>_str()).NR();
+<#+
+    return 0;
+}
+#>

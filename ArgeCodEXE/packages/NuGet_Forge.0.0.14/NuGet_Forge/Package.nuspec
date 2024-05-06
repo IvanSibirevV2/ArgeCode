@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>ArgeCode</id>
-    <version>0.0.13</version>
+    <version>0.0.14</version>
     <authors>SibirevIvanV2</authors>
     <description>C# FullFireSyntacticExtension ToFunc-Programming TestFramework DataViewContract Maper DynamicCMD CMD NirCMD</description>
 	<projectUrl>https://github.com/IvanSibirevV2/ArgeCode.git</projectUrl>
@@ -12,7 +12,7 @@ net46 - support
 net47 - support
 net48 - support
 
-+Ext_NirCMDoor;
++Ext_NirCMDoor; -BagaFixEd
 
 using System.CMD;
 using  System.CMD.NirCMD

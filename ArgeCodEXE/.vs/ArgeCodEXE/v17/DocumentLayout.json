@@ -3,19 +3,39 @@
   "WorkspaceRootPath": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ArgeCode||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\12_cmdoor\\ext_nircmdoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\12_cmdoor\\ext_nircmdoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ArgeCode||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\12_cmdoor\\ext_string_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\12_cmdoor\\ext_string_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\12_cmdoor\\ext_cmdoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\12_cmdoor\\ext_cmdoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\12_cmdoor\\ext_byte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\12_cmdoor\\ext_byte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\12_cmdoor\\ext_string_.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\12_cmdoor\\ext_string_.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\12_cmdoor\\ext_byte.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\12_cmdoor\\ext_byte.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\12_cmdoor\\ext_datetime_nownew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\12_cmdoor\\ext_datetime_nownew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C0FEB37-7EE1-4EE8-B022-81E3AA8DF471}|ArgeCodEXE\\ArgeCodEXE.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecodexe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C0FEB37-7EE1-4EE8-B022-81E3AA8DF471}|ArgeCodEXE\\ArgeCodEXE.csproj|solutionrelative:argecodexe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\argecode\\12_cmdoor\\ext_cmdoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|solutionrelative:argecode\\12_cmdoor\\ext_cmdoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F66B87C7-8AAE-4149-9B5D-81F79F0036DE}|ArgeCode\\ArgeCode.csproj|c:\\d\\github\\githuboll\\argecode\\argecodexe\\argecode\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
@@ -28,11 +48,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Ext_NirCMDoor.cs",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\12_CMDoor\\Ext_NirCMDoor.cs",
+              "RelativeDocumentMoniker": "ArgeCode\\12_CMDoor\\Ext_NirCMDoor.cs",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\12_CMDoor\\Ext_NirCMDoor.cs",
+              "RelativeToolTip": "ArgeCode\\12_CMDoor\\Ext_NirCMDoor.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAAC4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T09:39:37.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ext_String_.tt",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\12_CMDoor\\Ext_String_.tt",
+              "RelativeDocumentMoniker": "ArgeCode\\12_CMDoor\\Ext_String_.tt",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\12_CMDoor\\Ext_String_.tt",
+              "RelativeToolTip": "ArgeCode\\12_CMDoor\\Ext_String_.tt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-06T09:23:36.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Ext_DateTime_NowNew.cs",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\12_CMDoor\\Ext_DateTime_NowNew.cs",
+              "RelativeDocumentMoniker": "ArgeCode\\12_CMDoor\\Ext_DateTime_NowNew.cs",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\12_CMDoor\\Ext_DateTime_NowNew.cs",
+              "RelativeToolTip": "ArgeCode\\12_CMDoor\\Ext_DateTime_NowNew.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T08:28:56.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ext_Byte.cs",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\12_CMDoor\\Ext_Byte.cs",
+              "RelativeDocumentMoniker": "ArgeCode\\12_CMDoor\\Ext_Byte.cs",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\12_CMDoor\\Ext_Byte.cs",
+              "RelativeToolTip": "ArgeCode\\12_CMDoor\\Ext_Byte.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwBkAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T08:10:54.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ext_Byte.tt",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\12_CMDoor\\Ext_Byte.tt",
+              "RelativeDocumentMoniker": "ArgeCode\\12_CMDoor\\Ext_Byte.tt",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\12_CMDoor\\Ext_Byte.tt",
+              "RelativeToolTip": "ArgeCode\\12_CMDoor\\Ext_Byte.tt",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAIwIIAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-06T08:09:46.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ArgeCode",
               "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\ArgeCode.csproj",
               "RelativeDocumentMoniker": "ArgeCode\\ArgeCode.csproj",
@@ -44,38 +124,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Ext_NirCMDoor.cs",
-              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\12_CMDoor\\Ext_NirCMDoor.cs",
-              "RelativeDocumentMoniker": "ArgeCode\\12_CMDoor\\Ext_NirCMDoor.cs",
-              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\12_CMDoor\\Ext_NirCMDoor.cs",
-              "RelativeToolTip": "ArgeCode\\12_CMDoor\\Ext_NirCMDoor.cs",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAUwIkAAAAMAAAA",
+              "DocumentIndex": 2,
+              "Title": "Ext_String_.cs",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\12_CMDoor\\Ext_String_.cs",
+              "RelativeDocumentMoniker": "ArgeCode\\12_CMDoor\\Ext_String_.cs",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\12_CMDoor\\Ext_String_.cs",
+              "RelativeToolTip": "ArgeCode\\12_CMDoor\\Ext_String_.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAHMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T12:09:27.009Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T09:25:13.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCodEXE\\Program.cs",
               "RelativeDocumentMoniker": "ArgeCodEXE\\Program.cs",
               "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCodEXE\\Program.cs",
               "RelativeToolTip": "ArgeCodEXE\\Program.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAUwDEAAAAaAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACQAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T12:07:53.253Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Ext_CMDoor.cs",
               "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\12_CMDoor\\Ext_CMDoor.cs",
               "RelativeDocumentMoniker": "ArgeCode\\12_CMDoor\\Ext_CMDoor.cs",
               "ToolTip": "C:\\D\\GitHub\\GitHubOll\\ArgeCode\\ArgeCodEXE\\ArgeCode\\12_CMDoor\\Ext_CMDoor.cs",
               "RelativeToolTip": "ArgeCode\\12_CMDoor\\Ext_CMDoor.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAUwEIAAAAhAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEIAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T11:54:43.692Z"
             }

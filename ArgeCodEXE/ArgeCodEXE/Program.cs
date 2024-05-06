@@ -18,8 +18,6 @@ namespace ArgeCodEXE
         public static void Main(string[] args)
         {
             
-             
-            
             if (false)
             {
                 System.Console.WriteLine("Выведем на экран имеющийся список тестов");
